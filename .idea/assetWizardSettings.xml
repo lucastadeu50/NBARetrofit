@@ -19,8 +19,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_was_logo" />
-                            <entry key="sourceFile" value="C:\Users\arlinda\Desktop\LogoEPS\WAS_logo.svg" />
+                            <entry key="outputName" value="ic_det_logo" />
+                            <entry key="sourceFile" value="C:\Users\arlinda\Desktop\LogoEPS\DET_logo.svg" />
                           </map>
                         </option>
                       </PersistentState>

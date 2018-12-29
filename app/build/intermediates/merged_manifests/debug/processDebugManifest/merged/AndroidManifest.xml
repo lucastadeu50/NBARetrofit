@@ -32,6 +32,9 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name="com.example.arlinda.nbaretrofit.adapter.TeamsAdapter" />
+
         <meta-data
             android:name="android.arch.lifecycle.VERSION"
             android:value="27.0.0-SNAPSHOT" />

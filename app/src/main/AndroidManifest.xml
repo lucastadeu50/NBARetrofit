@@ -19,11 +19,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListaJogadoresActivity" />
-        <activity android:name=".adapter.JogadoresAdapter"></activity>
+        <activity android:name=".adapter.JogadoresAdapter" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".adapter.TeamsAdapter"></activity>
     </application>
 
 </manifest>

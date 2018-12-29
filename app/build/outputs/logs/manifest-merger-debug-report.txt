@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-29:12
+ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
 MERGED from [com.android.support:appcompat-v7:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.0.aar\e9be4b03041f6105763e2933ebda2037\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3a48c70d8037c07b792ee7c83031cad2\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:recyclerview-v7:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.0.aar\82fac7dbb9fd526f4f736eabeea52215\AndroidManifest.xml:17:1-22:12
@@ -15,20 +15,20 @@ MERGED from [com.android.support:support-vector-drawable:27.0.0] C:\Users\arlind
 MERGED from [com.android.support:support-core-ui:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.0.aar\0b950fac220e8d5bb2711dfc8a263424\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.0.aar\50db82793ee71899c399cf57088bc0f5\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\00ff83ebc3f4f3293157d4de0448a1a6\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:3:5-46
 		INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:11-69
@@ -37,7 +37,7 @@ ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidMan
 	android:name
 		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:7:5-27:19
+ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:7:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3a48c70d8037c07b792ee7c83031cad2\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3a48c70d8037c07b792ee7c83031cad2\AndroidManifest.xml:9:5-20
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\00ff83ebc3f4f3293157d4de0448a1a6\AndroidManifest.xml:24:5-28:19
@@ -73,7 +73,7 @@ ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidMan
 	android:name
 		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:21:19-57
 activity#com.example.arlinda.nbaretrofit.adapter.JogadoresAdapter
-ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:22:9-71
+ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:22:9-62
 	android:name
 		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:22:19-59
 meta-data#preloaded_fonts
@@ -82,6 +82,10 @@ ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidMan
 		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:26:13-54
 	android:name
 		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:25:13-43
+activity#com.example.arlinda.nbaretrofit.adapter.TeamsAdapter
+ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:28:9-67
+	android:name
+		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:28:19-55
 uses-sdk
 INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml
