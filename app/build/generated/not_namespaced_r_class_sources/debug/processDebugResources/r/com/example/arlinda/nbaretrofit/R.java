@@ -1712,7 +1712,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
@@ -2954,24 +2954,29 @@ public final class R {
     public static final int abc_textfield_search_default_mtrl_alpha=0x7f070051;
     public static final int abc_textfield_search_material=0x7f070052;
     public static final int abc_vector_test=0x7f070053;
-    public static final int ic_launcher_background=0x7f070054;
-    public static final int ic_launcher_foreground=0x7f070055;
-    public static final int nbaatlantahawksseeklogo=0x7f070056;
-    public static final int nbaatlantahawksseeklogocom=0x7f070057;
-    public static final int notification_action_background=0x7f070058;
-    public static final int notification_bg=0x7f070059;
-    public static final int notification_bg_low=0x7f07005a;
-    public static final int notification_bg_low_normal=0x7f07005b;
-    public static final int notification_bg_low_pressed=0x7f07005c;
-    public static final int notification_bg_normal=0x7f07005d;
-    public static final int notification_bg_normal_pressed=0x7f07005e;
-    public static final int notification_icon_background=0x7f07005f;
-    public static final int notification_template_icon_bg=0x7f070060;
-    public static final int notification_template_icon_low_bg=0x7f070061;
-    public static final int notification_tile_bg=0x7f070062;
-    public static final int notify_panel_notification_icon_bg=0x7f070063;
-    public static final int tooltip_frame_dark=0x7f070064;
-    public static final int tooltip_frame_light=0x7f070065;
+    public static final int ic_atl_logo=0x7f070054;
+    public static final int ic_cha_logo=0x7f070055;
+    public static final int ic_launcher_background=0x7f070056;
+    public static final int ic_launcher_foreground=0x7f070057;
+    public static final int ic_mia_logo=0x7f070058;
+    public static final int ic_orl_logo=0x7f070059;
+    public static final int ic_was_logo=0x7f07005a;
+    public static final int nbaatlantahawksseeklogo=0x7f07005b;
+    public static final int nbaatlantahawksseeklogocom=0x7f07005c;
+    public static final int notification_action_background=0x7f07005d;
+    public static final int notification_bg=0x7f07005e;
+    public static final int notification_bg_low=0x7f07005f;
+    public static final int notification_bg_low_normal=0x7f070060;
+    public static final int notification_bg_low_pressed=0x7f070061;
+    public static final int notification_bg_normal=0x7f070062;
+    public static final int notification_bg_normal_pressed=0x7f070063;
+    public static final int notification_icon_background=0x7f070064;
+    public static final int notification_template_icon_bg=0x7f070065;
+    public static final int notification_template_icon_low_bg=0x7f070066;
+    public static final int notification_tile_bg=0x7f070067;
+    public static final int notify_panel_notification_icon_bg=0x7f070068;
+    public static final int tooltip_frame_dark=0x7f070069;
+    public static final int tooltip_frame_light=0x7f07006a;
   }
   public static final class font {
     public static final int roboto_thin=0x7f080000;
@@ -7848,7 +7853,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>

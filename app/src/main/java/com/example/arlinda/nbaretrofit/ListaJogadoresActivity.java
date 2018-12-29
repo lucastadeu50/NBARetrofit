@@ -55,16 +55,22 @@ public class ListaJogadoresActivity  extends AppCompatActivity  {
                 Log.d(TAG, "onResponse: received information: " + response.body().toString());
 
                 ArrayList<Standard> standardList = response.body().getLeague().getStandard();
-                ArrayList<Standard> standardListFiltatrada = null;
+                ArrayList<Standard> standardListFiltatrada = new ArrayList<>();
                 for (int i=0; i<standardList.size(); i++){
-                    if (standardList.get(i).getTeamId() == teamId){
-                       standardListFiltatrada.add(i, standardList[i]);
-                    }
+                    int x = 0;
+                   if (standardList.get(i).getTeamId().equals(teamId) ){
+                     standardListFiltatrada.add(x, standardList.get(i));
+                     x++;
+                     }
                 }
                 
-
-                JogadoresAdapter cus = new JogadoresAdapter(ListaJogadoresActivity.this,standardList);
-                listViewJogadores.setAdapter(cus);
+                if (standardListFiltatrada != null) {
+                    JogadoresAdapter cus = new JogadoresAdapter(ListaJogadoresActivity.this, standardListFiltatrada);
+                    listViewJogadores.setAdapter(cus);
+                }
+                else{
+                    Toast.makeText(ListaJogadoresActivity.this, "Lista Vazia", Toast.LENGTH_SHORT).show();
+                }
                 for( int i = 0; i<standardList.size(); i++){
                     Log.d(TAG, "onResponse: \n" +
                             "First Name: " + standardList.get(i).getFirstName() + "\n" +
