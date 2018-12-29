@@ -28,6 +28,7 @@ public class ListaJogadoresActivity  extends AppCompatActivity  {
     public Standard standard;
     private static final String TAG = "MainActivity";
     private static final String BASE_URL = "http://data.nba.net/";
+    String teamId = "1610612737";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,7 @@ public class ListaJogadoresActivity  extends AppCompatActivity  {
 
 
         listViewJogadores = findViewById(R.id.listViewJogadores);
+        
 
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -53,9 +55,16 @@ public class ListaJogadoresActivity  extends AppCompatActivity  {
                 Log.d(TAG, "onResponse: received information: " + response.body().toString());
 
                 ArrayList<Standard> standardList = response.body().getLeague().getStandard();
+                ArrayList<Standard> standardListFiltatrada = null;
+                for (int i=0; i<standardList.size(); i++){
+                    if (standardList.get(i).getTeamId() == teamId){
+                       standardListFiltatrada.add(i, standardList[i]);
+                    }
+                }
+                
 
-                //JogadoresAdapter cus = new JogadoresAdapter(ListaJogadoresActivity.this,standardList);
-              //  listViewJogadores.setAdapter(cus);
+                JogadoresAdapter cus = new JogadoresAdapter(ListaJogadoresActivity.this,standardList);
+                listViewJogadores.setAdapter(cus);
                 for( int i = 0; i<standardList.size(); i++){
                     Log.d(TAG, "onResponse: \n" +
                             "First Name: " + standardList.get(i).getFirstName() + "\n" +
@@ -67,7 +76,7 @@ public class ListaJogadoresActivity  extends AppCompatActivity  {
             @Override
             public void onFailure(Call<Feed> call, Throwable t) {
                 Log.e(TAG, "onFailure: Something went wrong: " + t.getMessage() );
-                Toast.makeText(ListaJogadoresActivity.this, "Something went wrong" + t.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ListaJogadoresActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
             }
         });
     }

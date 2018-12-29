@@ -37,36 +37,9 @@ public class MainActivity extends AppCompatActivity {
         cardViewHawk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Retrofit retrofit = new Retrofit.Builder()
-                        .baseUrl(BASE_URL)
-                        .addConverterFactory(GsonConverterFactory.create())
-                        .build();
-
-                NbaAPI nbaAPI = retrofit.create(NbaAPI.class);
-                Call<Feed> call = nbaAPI.getData();
-
-                call.enqueue(new Callback<Feed>() {
-                    @Override
-                    public void onResponse(Call<Feed> call, Response<Feed> response) {
-                        Log.d(TAG, "onResponse: Server Response: " + response.toString());
-                        Log.d(TAG, "onResponse: received information: " + response.body().toString());
-
-                        ArrayList<Standard> standardList = response.body().getLeague().getStandard();
-                        for( int i = 0; i<standardList.size(); i++){
-                            Log.d(TAG, "onResponse: \n" +
-                                    "First Name: " + standardList.get(i).getFirstName() + "\n" +
-                                    "Last Name: " + standardList.get(i).getLastName() + "\n" +
-                                    "-------------------------------------------------------------------------\n\n");
-                        }
-                    }
-
-                    @Override
-                    public void onFailure(Call<Feed> call, Throwable t) {
-                        Log.e(TAG, "onFailure: Something went wrong: " + t.getMessage() );
-                        Toast.makeText(MainActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
-                    }
-                });
-            }
+                Intent intent = new Intent(MainActivity.this, ListaJogadoresActivity.class);
+                startActivity(intent);
+           }
         });
 
     }
