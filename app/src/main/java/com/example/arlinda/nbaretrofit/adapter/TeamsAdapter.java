@@ -98,7 +98,7 @@ public class TeamsAdapter extends ArrayAdapter<Team> {
         //create the imageloader object
         ImageLoader imageLoader = ImageLoader.getInstance();
         ;
-        int defaultImage = mContext.getResources().getIdentifier("@drawable/image_failed",null,mContext.getPackageName());
+        int defaultImage = mContext.getResources().getIdentifier("@drawable/ic_close_black_24dp",null,mContext.getPackageName());
 
         //create display options
         DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
@@ -119,15 +119,15 @@ public class TeamsAdapter extends ArrayAdapter<Team> {
     private void setupImageLoader(){
         // UNIVERSAL IMAGE LOADER SETUP
         DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
-                .cacheOnDisc(true).cacheInMemory(true)
+            //    .cacheOnDisc(true).cacheInMemory(true)
                 .imageScaleType(ImageScaleType.EXACTLY)
                 .displayer(new FadeInBitmapDisplayer(300)).build();
 
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
                 mContext)
                 .defaultDisplayImageOptions(defaultOptions)
-                .memoryCache(new WeakMemoryCache())
-                .discCacheSize(100 * 1024 * 1024).build();
+                .memoryCache(new WeakMemoryCache()).build();
+            //    .discCacheSize(100 * 1024 * 1024).build();
 
         ImageLoader.getInstance().init(config);
         // END - UNIVERSAL IMAGE LOADER SETUP

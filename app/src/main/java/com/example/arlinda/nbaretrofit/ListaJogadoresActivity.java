@@ -23,7 +23,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class ListaJogadoresActivity  extends AppCompatActivity  {
+public class ListaJogadoresActivity extends AppCompatActivity {
     ListView listViewJogadores;
     public Standard standard;
     private static final String TAG = "MainActivity";
@@ -37,7 +37,6 @@ public class ListaJogadoresActivity  extends AppCompatActivity  {
 
 
         listViewJogadores = findViewById(R.id.listViewJogadores);
-        
 
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -56,22 +55,21 @@ public class ListaJogadoresActivity  extends AppCompatActivity  {
 
                 ArrayList<Standard> standardList = response.body().getLeague().getStandard();
                 ArrayList<Standard> standardListFiltatrada = new ArrayList<>();
-                for (int i=0; i<standardList.size(); i++){
+                for (int i = 0; i < standardList.size(); i++) {
                     int x = 0;
-                   if (standardList.get(i).getTeamId().equals(teamId) ){
-                     standardListFiltatrada.add(x, standardList.get(i));
-                     x++;
-                     }
+                    if (standardList.get(i).getTeamId().equals(teamId)) {
+                        standardListFiltatrada.add(x, standardList.get(i));
+                        x++;
+                    }
                 }
-                
+
                 if (standardListFiltatrada != null) {
                     JogadoresAdapter cus = new JogadoresAdapter(ListaJogadoresActivity.this, standardListFiltatrada);
                     listViewJogadores.setAdapter(cus);
-                }
-                else{
+                } else {
                     Toast.makeText(ListaJogadoresActivity.this, "Lista Vazia", Toast.LENGTH_SHORT).show();
                 }
-                for( int i = 0; i<standardList.size(); i++){
+                for (int i = 0; i < standardList.size(); i++) {
                     Log.d(TAG, "onResponse: \n" +
                             "First Name: " + standardList.get(i).getFirstName() + "\n" +
                             "Last Name: " + standardList.get(i).getLastName() + "\n" +
@@ -81,11 +79,11 @@ public class ListaJogadoresActivity  extends AppCompatActivity  {
 
             @Override
             public void onFailure(Call<Feed> call, Throwable t) {
-                Log.e(TAG, "onFailure: Something went wrong: " + t.getMessage() );
+                Log.e(TAG, "onFailure: Something went wrong: " + t.getMessage());
                 Toast.makeText(ListaJogadoresActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
             }
         });
     }
-    }
+}
 
 

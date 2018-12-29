@@ -33,38 +33,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-fi_values-fi.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-fi\\values-fi.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,213,313,414,500,605,723,810,892,972,1079,1182,1279,1385,1484,1588,1751,1850",
-                        "endColumns": "107,99,100,85,104,117,86,81,79,106,102,96,105,98,103,162,98,79",
-                        "endOffsets": "208,308,409,495,600,718,805,887,967,1074,1177,1274,1380,1479,1583,1746,1845,1925"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\50db82793ee71899c399cf57088bc0f5\\res\\values-fi\\values-fi.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1930",
-                        "endColumns": "100",
-                        "endOffsets": "2026"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-ja_values-ja.arsc.flat",
             "map": [
                 {
@@ -92,6 +60,38 @@
                         "startOffsets": "1832",
                         "endColumns": "100",
                         "endOffsets": "1928"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-fi_values-fi.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-fi\\values-fi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,213,313,414,500,605,723,810,892,972,1079,1182,1279,1385,1484,1588,1751,1850",
+                        "endColumns": "107,99,100,85,104,117,86,81,79,106,102,96,105,98,103,162,98,79",
+                        "endOffsets": "208,308,409,495,600,718,805,887,967,1074,1177,1274,1380,1479,1583,1746,1845,1925"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\50db82793ee71899c399cf57088bc0f5\\res\\values-fi\\values-fi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1930",
+                        "endColumns": "100",
+                        "endOffsets": "2026"
                     }
                 }
             ]
@@ -129,37 +129,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-port_values-port.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-port\\values-port.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "55",
-                        "endOffsets": "106"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-v25_values-v25.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-v25\\values-v25.xml",
-                    "from": {
-                        "startLines": "2,3,4,6",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,126,209,308",
-                        "endLines": "2,3,5,7",
-                        "endColumns": "70,82,12,12",
-                        "endOffsets": "121,204,303,414"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-iw_values-iw.arsc.flat",
             "map": [
                 {
@@ -187,6 +156,37 @@
                         "startOffsets": "1888",
                         "endColumns": "102",
                         "endOffsets": "1986"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-v25_values-v25.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-v25\\values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-port_values-port.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
                     }
                 }
             ]
@@ -288,21 +288,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-h720dp-v13_values-h720dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "66",
-                        "endOffsets": "117"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-is_values-is.arsc.flat",
             "map": [
                 {
@@ -330,6 +315,21 @@
                         "startOffsets": "105,205,302,414,499,600,714,794,874,955,1065,1173,1271,1380,1479,1582,1737,1835",
                         "endColumns": "99,96,111,84,100,113,79,79,80,109,107,97,108,98,102,154,97,80",
                         "endOffsets": "200,297,409,494,595,709,789,869,950,1060,1168,1266,1375,1474,1577,1732,1830,1911"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-h720dp-v13_values-h720dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
                     }
                 }
             ]
@@ -543,38 +543,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-sq_values-sq.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-sq\\values-sq.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,219,319,431,518,628,751,832,911,994,1100,1205,1303,1409,1512,1628,1782,1881",
-                        "endColumns": "113,99,111,86,109,122,80,78,82,105,104,97,105,102,115,153,98,80",
-                        "endOffsets": "214,314,426,513,623,746,827,906,989,1095,1200,1298,1404,1507,1623,1777,1876,1957"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\50db82793ee71899c399cf57088bc0f5\\res\\values-sq\\values-sq.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1962",
-                        "endColumns": "100",
-                        "endOffsets": "2058"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-ko_values-ko.arsc.flat",
             "map": [
                 {
@@ -602,6 +570,38 @@
                         "startOffsets": "105,200,294,396,478,576,682,761,837,917,1015,1110,1205,1305,1401,1500,1652,1746",
                         "endColumns": "94,93,101,81,97,105,78,75,79,97,94,94,99,95,98,151,93,77",
                         "endOffsets": "195,289,391,473,571,677,756,832,912,1010,1105,1200,1300,1396,1495,1647,1741,1819"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-sq_values-sq.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-sq\\values-sq.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,219,319,431,518,628,751,832,911,994,1100,1205,1303,1409,1512,1628,1782,1881",
+                        "endColumns": "113,99,111,86,109,122,80,78,82,105,104,97,105,102,115,153,98,80",
+                        "endOffsets": "214,314,426,513,623,746,827,906,989,1095,1200,1298,1404,1507,1623,1777,1876,1957"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\50db82793ee71899c399cf57088bc0f5\\res\\values-sq\\values-sq.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1962",
+                        "endColumns": "100",
+                        "endOffsets": "2058"
                     }
                 }
             ]
@@ -989,38 +989,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-pa_values-pa.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-pa\\values-pa.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,208,305,410,496,596,709,786,862,941,1042,1146,1243,1352,1451,1561,1720,1820",
-                        "endColumns": "102,96,104,85,99,112,76,75,78,100,103,96,108,98,109,158,99,79",
-                        "endOffsets": "203,300,405,491,591,704,781,857,936,1037,1141,1238,1347,1446,1556,1715,1815,1895"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\50db82793ee71899c399cf57088bc0f5\\res\\values-pa\\values-pa.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1900",
-                        "endColumns": "100",
-                        "endOffsets": "1996"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-kk_values-kk.arsc.flat",
             "map": [
                 {
@@ -1048,6 +1016,38 @@
                         "startOffsets": "1950",
                         "endColumns": "100",
                         "endOffsets": "2046"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-pa_values-pa.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-pa\\values-pa.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,208,305,410,496,596,709,786,862,941,1042,1146,1243,1352,1451,1561,1720,1820",
+                        "endColumns": "102,96,104,85,99,112,76,75,78,100,103,96,108,98,109,158,99,79",
+                        "endOffsets": "203,300,405,491,591,704,781,857,936,1037,1141,1238,1347,1446,1556,1715,1815,1895"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\50db82793ee71899c399cf57088bc0f5\\res\\values-pa\\values-pa.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1900",
+                        "endColumns": "100",
+                        "endOffsets": "1996"
                     }
                 }
             ]
@@ -1149,6 +1149,21 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-v13_values-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-v13\\values-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "58",
+                        "endOffsets": "109"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-zu_values-zu.arsc.flat",
             "map": [
                 {
@@ -1176,21 +1191,6 @@
                         "startOffsets": "1959",
                         "endColumns": "100",
                         "endOffsets": "2055"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\values-v13_values-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-v13\\values-v13.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "58",
-                        "endOffsets": "109"
                     }
                 }
             ]
@@ -3084,10 +3084,10 @@
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
-                        "startOffsets": "57",
+                        "startOffsets": "54",
                         "endLines": "8",
                         "endColumns": "12",
-                        "endOffsets": "376"
+                        "endOffsets": "368"
                     },
                     "to": {
                         "startLines": "603",

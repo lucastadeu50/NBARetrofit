@@ -649,12 +649,16 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable atl_logo
 drawable ic_atl_logo
 drawable ic_cha_logo
+drawable ic_close_black_24dp
+drawable ic_det_logo
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mia_logo
 drawable ic_orl_logo
+drawable ic_sync_problem_black_24dp
 drawable ic_was_logo
 drawable nbaatlantahawksseeklogo
 drawable nbaatlantahawksseeklogocom
