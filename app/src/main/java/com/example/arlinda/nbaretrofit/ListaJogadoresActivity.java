@@ -23,7 +23,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class ListaJogadoresActivity extends AppCompatActivity {
+public class ListaJogadoresActivity extends AppCompatActivity  {
     ListView listViewJogadores;
     public Standard standard;
     private static final String TAG = "MainActivity";

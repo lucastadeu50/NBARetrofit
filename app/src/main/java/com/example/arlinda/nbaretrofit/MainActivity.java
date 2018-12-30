@@ -1,18 +1,25 @@
 package com.example.arlinda.nbaretrofit;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.arlinda.nbaretrofit.adapter.TeamsAdapter;
+import com.example.arlinda.nbaretrofit.model.Standard;
 import com.example.arlinda.nbaretrofit.model.Team;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity   {
+public class MainActivity extends AppCompatActivity  {
     private static final String TAG = "MainActivity";
 
     private static final String BASE_URL = "http://data.nba.net/";
+    Standard standard;
 
 
     @Override
@@ -81,8 +88,16 @@ public class MainActivity extends AppCompatActivity   {
         teamList.add(detroit_pistons);
 
 
+
         TeamsAdapter adapter = new TeamsAdapter(this, R.layout.activity_teams_adapter, teamList);
         mListView.setAdapter(adapter);
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(MainActivity.this, "asfd", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
         //   CardView cardViewHawk = findViewById(R.id.cardViewHawk);
@@ -97,4 +112,6 @@ public class MainActivity extends AppCompatActivity   {
         // });
 
     }
+
+
 }
