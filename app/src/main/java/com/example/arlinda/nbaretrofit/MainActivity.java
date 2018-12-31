@@ -15,7 +15,7 @@ import com.example.arlinda.nbaretrofit.model.Team;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     private static final String BASE_URL = "http://data.nba.net/";
@@ -31,12 +31,19 @@ public class MainActivity extends AppCompatActivity  {
 
         Team atlanta_hawks = new Team("1610612737", "Atlanta Hawks",
                 "drawable://" + R.drawable.atl_logo);
+
         Team charlotte_hornets = new Team("1610612766", "Charlotte Hornets",
                 "drawable://" + R.drawable.ic_cha_logo);
+
         Team detroit_pistons = new Team("1610612765", "Detroit Pistons",
                 "drawable://" + R.drawable.ic_det_logo);
+
+        Team brooklyn_nets = new Team("1610612765", "Brooklyn Nets",
+                "drawable://" + R.drawable.bkn_logo);
+
+
         Team boston_celtics = new Team("1610612738", "Boston Celtics",
-                "drawable://" + R.drawable.ic_det_logo);
+              "drawable://" + R.drawable.ic_det_logo);
 
         Team chicago_bulls = new Team("1610612741", "Chicago Bulls",
                 "drawable://" + R.drawable.ic_det_logo);
@@ -49,6 +56,10 @@ public class MainActivity extends AppCompatActivity  {
 
         Team denver_nuggets = new Team("1610612743", "Denver Nuggets",
                 "drawable://" + R.drawable.ic_det_logo);
+
+        Team houston_rockets = new Team("1610612745", "Houston Rockets",
+                "drawable://" + R.drawable.ic_det_logo);
+
 
         Team golden_state_warriors = new Team("1610612744", "Golden State Warriors",
                 "drawable://" + R.drawable.ic_det_logo);
@@ -77,6 +88,39 @@ public class MainActivity extends AppCompatActivity  {
         Team new_orleans_pelicans = new Team("1610612740", "New Orleans Pelicans",
                 "drawable://" + R.drawable.ic_det_logo);
 
+        Team new_york_knicks = new Team("1610612752", "New York Knicks",
+                "drawable://" + R.drawable.ic_det_logo);
+
+        Team oklahoma_city_thunder = new Team("1610612760", "Oklahoma City Thunder",
+                "drawable://" + R.drawable.ic_det_logo);
+
+        Team orlando_magic = new Team("1610612753", "Orlando Magic",
+                "drawable://" + R.drawable.ic_det_logo);
+
+        Team philadelphia_76ers = new Team("1610612755", "Philadelphia 76ers",
+                "drawable://" + R.drawable.ic_det_logo);
+
+        Team phoenix_suns = new Team("1610612756", "Phoenix Suns",
+                "drawable://" + R.drawable.ic_det_logo);
+
+        Team portland_trail_blazers = new Team("1610612757", "Portland Trail Blazers",
+                "drawable://" + R.drawable.ic_det_logo);
+
+        Team sacramento_kings = new Team("1610612758", "Sacramento Kings",
+                "drawable://" + R.drawable.ic_det_logo);
+
+        Team san_antonio_spurs = new Team("1610612759", "San Antonio Spurs",
+                "drawable://" + R.drawable.ic_det_logo);
+
+        Team toronto_raptors = new Team("1610612761", "Toronto Raptors",
+                "drawable://" + R.drawable.ic_det_logo);
+
+        Team utah_jazz = new Team("1610612762", "Utah Jazz",
+                "drawable://" + R.drawable.ic_det_logo);
+
+        Team washington_wizards = new Team("1610612764", "Washington Wizards",
+                "drawable://" + R.drawable.ic_det_logo);
+
 
 
         ArrayList<Team> teamList = new ArrayList<>();
@@ -86,6 +130,33 @@ public class MainActivity extends AppCompatActivity  {
         teamList.add(atlanta_hawks);
         teamList.add(charlotte_hornets);
         teamList.add(detroit_pistons);
+        teamList.add(boston_celtics);
+        teamList.add(brooklyn_nets);
+        teamList.add(chicago_bulls);
+        teamList.add(cleveland_cavaliers);
+        teamList.add(dallas_mavericks);
+        teamList.add(denver_nuggets);
+        teamList.add(golden_state_warriors);
+        teamList.add(houston_rockets);
+        teamList.add(indiana_pacers);
+        teamList.add(la_clippers);
+        teamList.add(los_angeles_lakers);
+        teamList.add(memphis_grizzlies);
+        teamList.add(miami_heat);
+        teamList.add(milwaukee_bucks);
+        teamList.add(minnesota_timberwolves);
+        teamList.add(new_orleans_pelicans);
+        teamList.add(new_york_knicks);
+        teamList.add(oklahoma_city_thunder);
+        teamList.add(orlando_magic);
+        teamList.add(philadelphia_76ers);
+        teamList.add(portland_trail_blazers);
+        teamList.add(phoenix_suns);
+        teamList.add(sacramento_kings);
+        teamList.add(san_antonio_spurs);
+        teamList.add(toronto_raptors);
+        teamList.add(utah_jazz);
+        teamList.add(washington_wizards);
 
 
 
