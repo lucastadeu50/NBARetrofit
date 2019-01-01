@@ -6,13 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.example.arlinda.nbaretrofit.adapter.TeamsAdapter;
-import com.example.arlinda.nbaretrofit.model.Standard;
-import com.example.arlinda.nbaretrofit.model.Team;
+import com.example.arlinda.nbaretrofit.model.player.Standard;
+import com.example.arlinda.nbaretrofit.model.team.Team;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {

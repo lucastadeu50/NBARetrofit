@@ -3,8 +3,6 @@ package com.example.arlinda.nbaretrofit.adapter;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.arlinda.nbaretrofit.R;
-import com.example.arlinda.nbaretrofit.model.Standard;
+import com.example.arlinda.nbaretrofit.model.player.Standard;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.util.ArrayList;

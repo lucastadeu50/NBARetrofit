@@ -1,6 +1,6 @@
 package com.example.arlinda.nbaretrofit.interfaces;
 
-import com.example.arlinda.nbaretrofit.model.Feed;
+import com.example.arlinda.nbaretrofit.model.player.Feed;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

@@ -2,19 +2,15 @@ package com.example.arlinda.nbaretrofit.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.arlinda.nbaretrofit.R;
-import com.example.arlinda.nbaretrofit.model.Team;
+import com.example.arlinda.nbaretrofit.model.team.Team;
 import com.nostra13.universalimageloader.cache.memory.impl.WeakMemoryCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
