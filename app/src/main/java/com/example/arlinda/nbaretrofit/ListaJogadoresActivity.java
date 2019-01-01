@@ -1,6 +1,7 @@
 package com.example.arlinda.nbaretrofit;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,6 +14,7 @@ import com.example.arlinda.nbaretrofit.interfaces.NbaAPI;
 import com.example.arlinda.nbaretrofit.interfaces.StatsAPI;
 import com.example.arlinda.nbaretrofit.model.player.Feed;
 import com.example.arlinda.nbaretrofit.model.player.Standard;
+import com.example.arlinda.nbaretrofit.model.stats.Latest;
 
 import java.util.ArrayList;
 
@@ -28,7 +30,7 @@ public class ListaJogadoresActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private static final String BASE_URL = "http://data.nba.net/";
     String teamId = null;
-    private  ArrayList<Standard> standardListFiltatrada;
+    private ArrayList<Standard> standardListFiltatrada;
 
 
     @Override
@@ -42,7 +44,7 @@ public class ListaJogadoresActivity extends AppCompatActivity {
 
         standardListFiltatrada = new ArrayList<>();
         callPlayers();
-      //  Toast.makeText(this, standardListFiltatrada.get(0).getPersonId(), Toast.LENGTH_SHORT).show()
+        //  Toast.makeText(this, standardListFiltatrada.get(0).getPersonId(), Toast.LENGTH_SHORT).show()
 
         listViewJogadores.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -50,16 +52,15 @@ public class ListaJogadoresActivity extends AppCompatActivity {
                 String x = String.valueOf(position);
                 Toast.makeText(ListaJogadoresActivity.this, x, Toast.LENGTH_SHORT).show();
 
-         //     String personID = standardListFiltatrada.get(position).getPersonId();
+                //     String personID = standardListFiltatrada.get(position).getPersonId();
 
-          //   callStats(personID);
+                //   callStats(personID);
 
             }
         });
 
 
     }
-
 
 
     public void callPlayers() {
@@ -71,7 +72,6 @@ public class ListaJogadoresActivity extends AppCompatActivity {
 
         NbaAPI nbaAPI = retrofit.create(NbaAPI.class);
         Call<Feed> call = nbaAPI.getData();
-
 
 
         call.enqueue(new Callback<Feed>() {
@@ -93,7 +93,6 @@ public class ListaJogadoresActivity extends AppCompatActivity {
                 }
 
                 if (standardListFiltatrada != null) {
-                    pegaLista(standardListFiltatrada);
                     JogadoresAdapter cus = new JogadoresAdapter(ListaJogadoresActivity.this, standardListFiltatrada);
                     listViewJogadores.setAdapter(cus);
                     callStats(standardListFiltatrada);
@@ -119,37 +118,37 @@ public class ListaJogadoresActivity extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         StatsAPI statsAPI = retrofit.create(StatsAPI.class);
-        for (int i = 0; i < arrayList.size(); i++) {
-        String personId = arrayList.get(i).getPersonId();
-        final Call<com.example.arlinda.nbaretrofit.model.stats.Response> call = statsAPI.getData(personId);
-        call.enqueue(new Callback<com.example.arlinda.nbaretrofit.model.stats.Response>() {
-            @Override
-            public void onResponse(Call<com.example.arlinda.nbaretrofit.model.stats.Response> call, Response<com.example.arlinda.nbaretrofit.model.stats.Response> response) {
-                int code = response.code();
-                if (code == 200) {
-                    com.example.arlinda.nbaretrofit.model.stats.Response response1 = response.body();
-                    String x = response1.getLeague().getStandard().getStats().getLatest().getAssists();
-                    Toast.makeText(ListaJogadoresActivity.this, x, Toast.LENGTH_SHORT).show();
+        final ArrayList<Latest> latestArrayList = new ArrayList<>();
 
-                } else {
-                    Toast.makeText(getBaseContext(), "Falha ao acessar Web Service, anote o codigo: " + String.valueOf(code),
+        for (int i = 0; i < arrayList.size(); i++) {
+            String personId = arrayList.get(i).getPersonId();
+            final Call<com.example.arlinda.nbaretrofit.model.stats.Response> call = statsAPI.getData(personId);
+
+            call.enqueue(new Callback<com.example.arlinda.nbaretrofit.model.stats.Response>() {
+                @Override
+                public void onResponse(Call<com.example.arlinda.nbaretrofit.model.stats.Response> call, Response<com.example.arlinda.nbaretrofit.model.stats.Response> response) {
+                    int code = response.code();
+                    if (code == 200) {
+                        com.example.arlinda.nbaretrofit.model.stats.Response response1 = response.body();
+                   //     String x = response1.getLeague().getStandard().getStats().getLatest().getAssists();
+                        latestArrayList.add(response1.getLeague().getStandard().getStats().getLatest());
+                        Toast.makeText(ListaJogadoresActivity.this, latestArrayList.get(0).getAssists(), Toast.LENGTH_SHORT).show();
+
+                    } else {
+                        Toast.makeText(getBaseContext(), "Falha ao acessar Web Service, anote o codigo: " + String.valueOf(code),
+                                Toast.LENGTH_LONG).show();
+                    }
+                }
+
+                @Override
+                public void onFailure(Call<com.example.arlinda.nbaretrofit.model.stats.Response> call, Throwable t) {
+                    Toast.makeText(getBaseContext(), t.getMessage(),
                             Toast.LENGTH_LONG).show();
                 }
-            }
+            });
+        }
+    }
 
-            @Override
-            public void onFailure(Call<com.example.arlinda.nbaretrofit.model.stats.Response> call, Throwable t) {
-                Toast.makeText(getBaseContext(), t.getMessage(),
-                        Toast.LENGTH_LONG).show();
-            }
-        });
-            Toast.makeText(this, personId, Toast.LENGTH_SHORT).show();
-    }
-    }
-    public ArrayList<Standard> pegaLista(ArrayList<Standard> standardListFiltatrada){
-        standardListFiltatrada = standardListFiltatrada;
-        return standardListFiltatrada;
-    }
 }
 
 

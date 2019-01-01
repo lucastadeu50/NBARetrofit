@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\e9be4b03041f6105763e2933ebda2037\\res\\values-v25\\values-v25.xml",
+                    "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0-alpha01.aar\\83ecaa5edb07f3b5b6df99177e0ef525\\res\\values-v25\\values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

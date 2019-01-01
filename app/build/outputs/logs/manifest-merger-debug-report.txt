@@ -4,17 +4,38 @@ ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidMan
 INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
 INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
 INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
-MERGED from [com.android.support:appcompat-v7:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.0.aar\e9be4b03041f6105763e2933ebda2037\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3a48c70d8037c07b792ee7c83031cad2\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:recyclerview-v7:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.0.aar\82fac7dbb9fd526f4f736eabeea52215\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.0.aar\7c281a8261de4df97e6812974a111973\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.0.aar\3ab609c65ff833757c21e6d6315f06d9\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.0.aar\0b00a8d1c0ec819a34b3851be59f1e37\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.0.aar\e2fb985c7c3e8eaa0b4fe1d5e75d0a54\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.0.aar\ce3e9a11c5da30d2123d19a13c1409de\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.0.aar\0b950fac220e8d5bb2711dfc8a263424\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.0.aar\50db82793ee71899c399cf57088bc0f5\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\00ff83ebc3f4f3293157d4de0448a1a6\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.0-alpha3.aar\b3ea683257e09fb337e8604575e9cf0d\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\b8b1ccf5f0c61cd07946fd5b760690dc\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\appcompat-1.1.0-alpha01.aar\83ecaa5edb07f3b5b6df99177e0ef525\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\recyclerview-1.1.0-alpha01.aar\b85880f48acaf547e2483bda04c5508c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\60824a46aae066be9aa17ac4d0088106\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\68f5239f1a994021ef0ed415fb7765b3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\e7c42aede55917b3d54ae83c31984026\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\e369072199d6ae2375c8af9fc802078d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\transition-1.0.0.aar\64aeb266a3f7b2400b83959d8c5e2b7c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0-alpha02] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0-alpha02.aar\42f82a99b2c28ec52b338a3e31164311\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\b998032526effc2ac78c896757442765\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\15ffe29b3eacaf101211db7e171dc1ff\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\22d86b863e5c28ecb52f0c8f929857b3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\227c1069150044795b48d45d67e5f9db\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\e65129f0424ef4c9c6d56aa0ef7528c8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\16f477d4c52a9380cc7f8cd2748f87b0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\ef9ae3b9eb0f918f7ca7093fe3f4b487\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\bfea1ed2f9d46d42c445a00477d84e7f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\a66f005e51e853f1c7f2ef92d68dd276\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\f7e52cb20bc3f5d9d05631fac15ec9f2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\22d06e942310e59b953b8d6c7f607c2d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\cd896ccbeaa8c59dac75997a2d165be3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\34e8ac428899dc7b026141f81d7b746d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0-alpha02] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\activity-1.0.0-alpha02.aar\39c5c3f7fbc5180c65ea72493464c986\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\3780924b80fe96038696156cafcdfc10\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\df27b462b544b12c317cf0d1dbe161de\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\d7c3f10f2aa0126732b96a8799dc7fac\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\18906dd53fc27f910e70d4712d7f7992\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.1.aar\2a7302736d732a7103e7d233c010ec5d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0-alpha02] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\core-1.1.0-alpha02.aar\4dc153b4a5a2549f60abbb09b1f33370\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\51d0e92761f23454f5199fc29afd82f9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0-alpha01.aar\d45687f26b8078f1395288a003a3979f\AndroidManifest.xml:17:1-25:12
 INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
 INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
 INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:2:1-31:12
@@ -38,10 +59,16 @@ ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidMan
 		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:5:22-64
 application
 ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:7:5-29:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3a48c70d8037c07b792ee7c83031cad2\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3a48c70d8037c07b792ee7c83031cad2\AndroidManifest.xml:9:5-20
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\00ff83ebc3f4f3293157d4de0448a1a6\AndroidManifest.xml:24:5-28:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\00ff83ebc3f4f3293157d4de0448a1a6\AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.0-alpha3.aar\b3ea683257e09fb337e8604575e9cf0d\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.0-alpha3.aar\b3ea683257e09fb337e8604575e9cf0d\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\b8b1ccf5f0c61cd07946fd5b760690dc\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\b8b1ccf5f0c61cd07946fd5b760690dc\AndroidManifest.xml:22:5-20
+MERGED from [androidx.core:core:1.1.0-alpha02] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\core-1.1.0-alpha02.aar\4dc153b4a5a2549f60abbb09b1f33370\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.1.0-alpha02] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\core-1.1.0-alpha02.aar\4dc153b4a5a2549f60abbb09b1f33370\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0-alpha01.aar\d45687f26b8078f1395288a003a3979f\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0-alpha01.aar\d45687f26b8078f1395288a003a3979f\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0-alpha02] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\core-1.1.0-alpha02.aar\4dc153b4a5a2549f60abbb09b1f33370\AndroidManifest.xml:22:18-86
 	android:supportsRtl
 		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
@@ -90,28 +117,70 @@ uses-sdk
 INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.0.aar\e9be4b03041f6105763e2933ebda2037\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.0.aar\e9be4b03041f6105763e2933ebda2037\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3a48c70d8037c07b792ee7c83031cad2\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3a48c70d8037c07b792ee7c83031cad2\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:recyclerview-v7:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.0.aar\82fac7dbb9fd526f4f736eabeea52215\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.0.aar\82fac7dbb9fd526f4f736eabeea52215\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.0.aar\7c281a8261de4df97e6812974a111973\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.0.aar\7c281a8261de4df97e6812974a111973\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.0.aar\3ab609c65ff833757c21e6d6315f06d9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.0.aar\3ab609c65ff833757c21e6d6315f06d9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.0.aar\0b00a8d1c0ec819a34b3851be59f1e37\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.0.aar\0b00a8d1c0ec819a34b3851be59f1e37\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.0.aar\e2fb985c7c3e8eaa0b4fe1d5e75d0a54\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.0.aar\e2fb985c7c3e8eaa0b4fe1d5e75d0a54\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.0.aar\ce3e9a11c5da30d2123d19a13c1409de\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.0.aar\ce3e9a11c5da30d2123d19a13c1409de\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.0.aar\0b950fac220e8d5bb2711dfc8a263424\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.0.aar\0b950fac220e8d5bb2711dfc8a263424\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.0.aar\50db82793ee71899c399cf57088bc0f5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.0.aar\50db82793ee71899c399cf57088bc0f5\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\00ff83ebc3f4f3293157d4de0448a1a6\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\00ff83ebc3f4f3293157d4de0448a1a6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.0-alpha3.aar\b3ea683257e09fb337e8604575e9cf0d\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.0-alpha3.aar\b3ea683257e09fb337e8604575e9cf0d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\b8b1ccf5f0c61cd07946fd5b760690dc\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\b8b1ccf5f0c61cd07946fd5b760690dc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\appcompat-1.1.0-alpha01.aar\83ecaa5edb07f3b5b6df99177e0ef525\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\appcompat-1.1.0-alpha01.aar\83ecaa5edb07f3b5b6df99177e0ef525\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\recyclerview-1.1.0-alpha01.aar\b85880f48acaf547e2483bda04c5508c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\recyclerview-1.1.0-alpha01.aar\b85880f48acaf547e2483bda04c5508c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\60824a46aae066be9aa17ac4d0088106\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\60824a46aae066be9aa17ac4d0088106\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\68f5239f1a994021ef0ed415fb7765b3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\68f5239f1a994021ef0ed415fb7765b3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\e7c42aede55917b3d54ae83c31984026\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\e7c42aede55917b3d54ae83c31984026\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\e369072199d6ae2375c8af9fc802078d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\e369072199d6ae2375c8af9fc802078d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\transition-1.0.0.aar\64aeb266a3f7b2400b83959d8c5e2b7c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\transition-1.0.0.aar\64aeb266a3f7b2400b83959d8c5e2b7c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0-alpha02] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0-alpha02.aar\42f82a99b2c28ec52b338a3e31164311\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0-alpha02] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0-alpha02.aar\42f82a99b2c28ec52b338a3e31164311\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\b998032526effc2ac78c896757442765\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\b998032526effc2ac78c896757442765\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\15ffe29b3eacaf101211db7e171dc1ff\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\15ffe29b3eacaf101211db7e171dc1ff\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\22d86b863e5c28ecb52f0c8f929857b3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\22d86b863e5c28ecb52f0c8f929857b3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\227c1069150044795b48d45d67e5f9db\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\227c1069150044795b48d45d67e5f9db\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\e65129f0424ef4c9c6d56aa0ef7528c8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\e65129f0424ef4c9c6d56aa0ef7528c8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\16f477d4c52a9380cc7f8cd2748f87b0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\16f477d4c52a9380cc7f8cd2748f87b0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\ef9ae3b9eb0f918f7ca7093fe3f4b487\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\ef9ae3b9eb0f918f7ca7093fe3f4b487\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\bfea1ed2f9d46d42c445a00477d84e7f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\bfea1ed2f9d46d42c445a00477d84e7f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\a66f005e51e853f1c7f2ef92d68dd276\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\a66f005e51e853f1c7f2ef92d68dd276\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\f7e52cb20bc3f5d9d05631fac15ec9f2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\f7e52cb20bc3f5d9d05631fac15ec9f2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\22d06e942310e59b953b8d6c7f607c2d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\22d06e942310e59b953b8d6c7f607c2d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\cd896ccbeaa8c59dac75997a2d165be3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\cd896ccbeaa8c59dac75997a2d165be3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\34e8ac428899dc7b026141f81d7b746d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\34e8ac428899dc7b026141f81d7b746d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0-alpha02] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\activity-1.0.0-alpha02.aar\39c5c3f7fbc5180c65ea72493464c986\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0-alpha02] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\activity-1.0.0-alpha02.aar\39c5c3f7fbc5180c65ea72493464c986\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\3780924b80fe96038696156cafcdfc10\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\3780924b80fe96038696156cafcdfc10\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\df27b462b544b12c317cf0d1dbe161de\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\df27b462b544b12c317cf0d1dbe161de\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\d7c3f10f2aa0126732b96a8799dc7fac\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\d7c3f10f2aa0126732b96a8799dc7fac\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\18906dd53fc27f910e70d4712d7f7992\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\18906dd53fc27f910e70d4712d7f7992\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.1.aar\2a7302736d732a7103e7d233c010ec5d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.1.aar\2a7302736d732a7103e7d233c010ec5d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0-alpha02] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\core-1.1.0-alpha02.aar\4dc153b4a5a2549f60abbb09b1f33370\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0-alpha02] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\core-1.1.0-alpha02.aar\4dc153b4a5a2549f60abbb09b1f33370\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\51d0e92761f23454f5199fc29afd82f9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\51d0e92761f23454f5199fc29afd82f9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0-alpha01.aar\d45687f26b8078f1395288a003a3979f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0-alpha01.aar\d45687f26b8078f1395288a003a3979f\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -122,9 +191,3 @@ INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\Android
 		INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\src\main\AndroidManifest.xml
-meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\00ff83ebc3f4f3293157d4de0448a1a6\AndroidManifest.xml:25:9-27:47
-	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\00ff83ebc3f4f3293157d4de0448a1a6\AndroidManifest.xml:27:13-44
-	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\00ff83ebc3f4f3293157d4de0448a1a6\AndroidManifest.xml:26:13-58
