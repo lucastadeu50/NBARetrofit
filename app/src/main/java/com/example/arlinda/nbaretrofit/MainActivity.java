@@ -33,97 +33,97 @@ public class MainActivity extends AppCompatActivity {
                 "drawable://" + R.drawable.atl_logo);
 
         Team charlotte_hornets = new Team("1610612766", "Charlotte Hornets",
-                "drawable://" + R.drawable.ic_cha_logo);
+                "drawable://" + R.drawable.cha_logo);
 
         Team detroit_pistons = new Team("1610612765", "Detroit Pistons",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.det_logo);
 
         Team brooklyn_nets = new Team("1610612765", "Brooklyn Nets",
                 "drawable://" + R.drawable.bkn_logo);
 
 
         Team boston_celtics = new Team("1610612738", "Boston Celtics",
-              "drawable://" + R.drawable.ic_det_logo);
+              "drawable://" + R.drawable.bos_logo);
 
         Team chicago_bulls = new Team("1610612741", "Chicago Bulls",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.chi_logo);
 
         Team cleveland_cavaliers = new Team("1610612739", "Cleveland Cavaliers",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.cle_logo);
 
         Team dallas_mavericks = new Team("1610612742", "Dallas Mavericks",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.dal_logo);
 
         Team denver_nuggets = new Team("1610612743", "Denver Nuggets",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.den_logo);
 
         Team houston_rockets = new Team("1610612745", "Houston Rockets",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.hou_logo);
 
 
         Team golden_state_warriors = new Team("1610612744", "Golden State Warriors",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.gsw_logo);
 
         Team indiana_pacers = new Team("1610612754", "Indiana Pacers",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.ind_logo);
 
         Team la_clippers = new Team("1610612746", "LA Clippers",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.lac_logo);
 
         Team los_angeles_lakers = new Team("1610612747", "Los Angeles Lakers",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.lal_logo);
 
         Team memphis_grizzlies = new Team("1610612763", "Memphis Grizzlies",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.mem_logo);
 
         Team miami_heat = new Team("1610612748", "Miami Heat",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.mia_logo);
 
         Team milwaukee_bucks = new Team("1610612749", "Milwaukee Bucks",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.mil_logo);
 
         Team minnesota_timberwolves = new Team("1610612750", "Minnesota Timberwolves",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.min_logo);
 
         Team new_orleans_pelicans = new Team("1610612740", "New Orleans Pelicans",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.nop_logo);
 
         Team new_york_knicks = new Team("1610612752", "New York Knicks",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.nyk_logo);
 
         Team oklahoma_city_thunder = new Team("1610612760", "Oklahoma City Thunder",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.okc_logo);
 
         Team orlando_magic = new Team("1610612753", "Orlando Magic",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.orl_logo);
 
         Team philadelphia_76ers = new Team("1610612755", "Philadelphia 76ers",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.phi_logo);
 
         Team phoenix_suns = new Team("1610612756", "Phoenix Suns",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.phx_logo);
 
         Team portland_trail_blazers = new Team("1610612757", "Portland Trail Blazers",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.por_logo);
 
         Team sacramento_kings = new Team("1610612758", "Sacramento Kings",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.sac_logo);
 
         Team san_antonio_spurs = new Team("1610612759", "San Antonio Spurs",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.sas_logo);
 
         Team toronto_raptors = new Team("1610612761", "Toronto Raptors",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.tor_logo);
 
         Team utah_jazz = new Team("1610612762", "Utah Jazz",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.uta_logo);
 
         Team washington_wizards = new Team("1610612764", "Washington Wizards",
-                "drawable://" + R.drawable.ic_det_logo);
+                "drawable://" + R.drawable.was_logo);
 
 
 
-        ArrayList<Team> teamList = new ArrayList<>();
+        final ArrayList<Team> teamList = new ArrayList<>();
 
 
         //Add the Person objects to an ArrayList
@@ -166,7 +166,9 @@ public class MainActivity extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "asfd", Toast.LENGTH_SHORT).show();
+               Intent intent = new Intent(MainActivity.this, ListaJogadoresActivity.class);
+                intent.putExtra("teamid", teamList.get(position).getTeamId());
+                startActivity(intent);
             }
         });
 

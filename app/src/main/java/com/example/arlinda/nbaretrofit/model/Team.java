@@ -1,6 +1,8 @@
 package com.example.arlinda.nbaretrofit.model;
 
-public class Team {
+import java.io.Serializable;
+
+public class Team implements Serializable {
     String teamId;
     String teamName;
     String imgURL;

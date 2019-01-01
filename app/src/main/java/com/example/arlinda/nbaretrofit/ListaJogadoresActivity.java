@@ -1,21 +1,17 @@
 package com.example.arlinda.nbaretrofit;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.arlinda.nbaretrofit.adapter.JogadoresAdapter;
+import com.example.arlinda.nbaretrofit.interfaces.NbaAPI;
 import com.example.arlinda.nbaretrofit.model.Feed;
 import com.example.arlinda.nbaretrofit.model.Standard;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -28,7 +24,7 @@ public class ListaJogadoresActivity extends AppCompatActivity  {
     public Standard standard;
     private static final String TAG = "MainActivity";
     private static final String BASE_URL = "http://data.nba.net/";
-    String teamId = "1610612737";
+    String teamId = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +33,10 @@ public class ListaJogadoresActivity extends AppCompatActivity  {
 
 
         listViewJogadores = findViewById(R.id.listViewJogadores);
+
+
+        teamId = getIntent().getExtras().getString("teamid");
+        Toast.makeText(this, teamId, Toast.LENGTH_SHORT).show();
 
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -81,6 +81,7 @@ public class ListaJogadoresActivity extends AppCompatActivity  {
             public void onFailure(Call<Feed> call, Throwable t) {
                 Log.e(TAG, "onFailure: Something went wrong: " + t.getMessage());
                 Toast.makeText(ListaJogadoresActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
+
             }
         });
     }

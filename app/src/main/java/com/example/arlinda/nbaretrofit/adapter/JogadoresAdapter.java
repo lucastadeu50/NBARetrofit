@@ -9,10 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.arlinda.nbaretrofit.R;
 import com.example.arlinda.nbaretrofit.model.Standard;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,9 +34,17 @@ public class JogadoresAdapter extends ArrayAdapter<Standard> {
         convertView = LayoutInflater.from(getContext()).inflate(R.layout.activity_jogadores_adapter, parent, false);
         TextView textViewLastName = convertView.findViewById(R.id.textViewLastName);
         TextView textViewFirstName = convertView.findViewById(R.id.textViewFirstName);
+        ImageView imageViewAvatar = convertView.findViewById(R.id.imageViewAvatar);
 
         textViewLastName.setText(standard.getLastName());
         textViewFirstName.setText(standard.getFirstName());
+        String playerId = standard.getPersonId();
+        String teamId = standard.getTeamId();
+        String url = "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/"+ teamId +"/2018/260x190/"+ playerId +".png";
+        ImageLoader imageLoader= ImageLoader.getInstance();
+
+        imageLoader.displayImage(url, imageViewAvatar);
+
 
         return convertView;
     }

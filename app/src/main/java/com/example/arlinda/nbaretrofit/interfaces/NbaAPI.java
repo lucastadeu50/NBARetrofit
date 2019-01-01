@@ -1,4 +1,4 @@
-package com.example.arlinda.nbaretrofit;
+package com.example.arlinda.nbaretrofit.interfaces;
 
 import com.example.arlinda.nbaretrofit.model.Feed;
 
@@ -11,5 +11,8 @@ public interface NbaAPI {
 
     @Headers("Content-Type: application/json")
     @GET("/prod/v1/2018/players.json")
+
     Call<Feed> getData();
 }
+
+
