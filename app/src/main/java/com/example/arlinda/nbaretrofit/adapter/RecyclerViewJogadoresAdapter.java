@@ -43,7 +43,7 @@ public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerV
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_listitem, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
-        return null;
+        return viewHolder;
     }
 
     @Override
@@ -60,7 +60,7 @@ public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerV
 
         holder.textViewFirstName.setText(standardArrayList.get(position).getFirstName());
         holder.textViewLastName.setText(standardArrayList.get(position).getLastName());
-        holder.textViewFirstName.setText(latestArrayList.get(position).getPpg());
+        holder.textViewPPG.setText(latestArrayList.get(position).getPpg());
 
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,6 +91,7 @@ public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerV
             textViewLastName = itemView.findViewById(R.id.textViewLastName);
             textViewPPG = itemView.findViewById(R.id.textViewPPG);
             parentLayout = itemView.findViewById(R.id.parent_layout);
+
 
         }
     }

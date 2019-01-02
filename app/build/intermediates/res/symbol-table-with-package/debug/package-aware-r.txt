@@ -1399,6 +1399,7 @@ id parallax
 id parent
 id parentPanel
 id parentRelative
+id parent_layout
 id parent_matrix
 id path
 id pathRelative
@@ -1410,6 +1411,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerViewJogadores
 id reverseSawtooth
 id right
 id right_icon
@@ -1478,6 +1480,7 @@ id textSpacerNoTitle
 id textStart
 id textViewFirstName
 id textViewLastName
+id textViewPPG
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1567,6 +1570,7 @@ layout activity_jogadores_adapter
 layout activity_lista_jogadores
 layout activity_main
 layout activity_main2
+layout activity_recycler_jogadores
 layout activity_teams_adapter
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -1583,6 +1587,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout layout_listitem
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
