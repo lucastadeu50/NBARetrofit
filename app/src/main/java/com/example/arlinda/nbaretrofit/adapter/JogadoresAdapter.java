@@ -12,12 +12,13 @@ import android.widget.TextView;
 
 import com.example.arlinda.nbaretrofit.R;
 import com.example.arlinda.nbaretrofit.model.player.Standard;
+import com.example.arlinda.nbaretrofit.model.stats.Latest;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class JogadoresAdapter extends ArrayAdapter<Standard> {
+public class JogadoresAdapter extends ArrayAdapter<Standard>  {
     private ArrayList<Standard> standards;
     public JogadoresAdapter(@NonNull Context context, List<Standard> standards) {
 
@@ -35,7 +36,6 @@ public class JogadoresAdapter extends ArrayAdapter<Standard> {
         ImageView imageViewAvatar = convertView.findViewById(R.id.imageViewAvatar);
 
         textViewLastName.setText(standard.getLastName());
-        textViewFirstName.setText(standard.getFirstName());
         String playerId = standard.getPersonId();
         String teamId = standard.getTeamId();
         String url = "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/"+ teamId +"/2018/260x190/"+ playerId +".png";

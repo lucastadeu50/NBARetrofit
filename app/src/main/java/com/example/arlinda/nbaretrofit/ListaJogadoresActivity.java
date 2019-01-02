@@ -83,12 +83,10 @@ public class ListaJogadoresActivity extends AppCompatActivity {
                 ArrayList<Standard> standardList = response.body().getLeague().getStandard();
 
                 for (int i = 0; i < standardList.size(); i++) {
-                    int x = 0;
                     if (standardList.get(i).getTeamId().equals(teamId)) {
 
-                        standardListFiltatrada.add(x, standardList.get(i));
+                        standardListFiltatrada.add(standardList.get(i));
 
-                        x++;
                     }
                 }
 

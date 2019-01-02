@@ -9,6 +9,7 @@ MERGED from [com.google.android.material:material:1.0.0] C:\Users\arlinda\.gradl
 MERGED from [androidx.appcompat:appcompat:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\appcompat-1.1.0-alpha01.aar\83ecaa5edb07f3b5b6df99177e0ef525\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\recyclerview-1.1.0-alpha01.aar\b85880f48acaf547e2483bda04c5508c\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\60824a46aae066be9aa17ac4d0088106\AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\jetified-circleimageview-2.2.0.aar\ed9ef13ac0610e359c147717d798b081\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\68f5239f1a994021ef0ed415fb7765b3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\e7c42aede55917b3d54ae83c31984026\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\e369072199d6ae2375c8af9fc802078d\AndroidManifest.xml:17:1-22:12
@@ -63,6 +64,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] C:\Users\a
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.0-alpha3.aar\b3ea683257e09fb337e8604575e9cf0d\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\b8b1ccf5f0c61cd07946fd5b760690dc\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\b8b1ccf5f0c61cd07946fd5b760690dc\AndroidManifest.xml:22:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\jetified-circleimageview-2.2.0.aar\ed9ef13ac0610e359c147717d798b081\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\jetified-circleimageview-2.2.0.aar\ed9ef13ac0610e359c147717d798b081\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.1.0-alpha02] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\core-1.1.0-alpha02.aar\4dc153b4a5a2549f60abbb09b1f33370\AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.1.0-alpha02] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\core-1.1.0-alpha02.aar\4dc153b4a5a2549f60abbb09b1f33370\AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0-alpha01.aar\d45687f26b8078f1395288a003a3979f\AndroidManifest.xml:22:5-23:19
@@ -127,6 +130,8 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha01] C:\Users\arlinda\
 MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha01] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\recyclerview-1.1.0-alpha01.aar\b85880f48acaf547e2483bda04c5508c\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\60824a46aae066be9aa17ac4d0088106\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\60824a46aae066be9aa17ac4d0088106\AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\jetified-circleimageview-2.2.0.aar\ed9ef13ac0610e359c147717d798b081\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\jetified-circleimageview-2.2.0.aar\ed9ef13ac0610e359c147717d798b081\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\68f5239f1a994021ef0ed415fb7765b3\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\68f5239f1a994021ef0ed415fb7765b3\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\arlinda\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\e7c42aede55917b3d54ae83c31984026\AndroidManifest.xml:20:5-44
