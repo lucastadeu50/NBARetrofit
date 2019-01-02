@@ -2,6 +2,7 @@ package com.example.arlinda.nbaretrofit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,11 +18,16 @@ import com.example.arlinda.nbaretrofit.interfaces.StatsAPI;
 import com.example.arlinda.nbaretrofit.model.player.Feed;
 import com.example.arlinda.nbaretrofit.model.player.Standard;
 import com.example.arlinda.nbaretrofit.model.stats.Latest;
+import com.example.arlinda.nbaretrofit.model.stats.Stats;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import io.reactivex.Observable;
+import io.reactivex.functions.Consumer;
+import io.reactivex.functions.Function;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -101,20 +107,39 @@ public class ListaJogadoresActivity extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         StatsAPI statsAPI = retrofit.create(StatsAPI.class);
-        final ArrayList<Latest> latestArrayList = new ArrayList<>();
+        final ArrayList<Latest> latestArrayList = new ArrayList<>(arrayList.size());
 
-        for (int i = 0; i < arrayList.size(); i++) {
+
+        final ProgressDialog dialog = new ProgressDialog(ListaJogadoresActivity.this);
+
+
+
+        for ( int i = 0; i < arrayList.size(); i++) {
             String personId = arrayList.get(i).getPersonId();
             final Call<com.example.arlinda.nbaretrofit.model.stats.Response> call = statsAPI.getData(personId);
 
             final int finalI = i;
+
+            dialog.setMessage("Carregando...");
+            dialog.setCancelable(false);
+            dialog.show();
+            if (dialog.isShowing())
+                dialog.dismiss();
+            final int finalI1 = i;
             call.enqueue(new Callback<com.example.arlinda.nbaretrofit.model.stats.Response>() {
                 @Override
-                public void onResponse(Call<com.example.arlinda.nbaretrofit.model.stats.Response> call, Response<com.example.arlinda.nbaretrofit.model.stats.Response> response) {
+                public void onResponse(Call<com.example.arlinda.nbaretrofit.model.stats.Response> call,
+                                       Response<com.example.arlinda.nbaretrofit.model.stats.Response> response) {
+
+
                     int code = response.code();
-                    if (code == 200) {
+                    if (response.isSuccessful()) {
+
                         com.example.arlinda.nbaretrofit.model.stats.Response response1 = response.body();
-                   //     String x = response1.getLeague().getStandard().getStats().getLatest().getAssists();
+
+
+
+                   //     String x = response1.getLeague().getStandard().getStats().getLatest().getAssists();response.isSuccessful()
                         latestArrayList.add(response1.getLeague().getStandard().getStats().getLatest());
                      //   Toast.makeText(ListaJogadoresActivity.this, latestArrayList.get(0).getAssists(), Toast.LENGTH_SHORT).show();
 
@@ -122,21 +147,19 @@ public class ListaJogadoresActivity extends AppCompatActivity {
                         Toast.makeText(getBaseContext(), "Falha ao acessar Web Service, anote o codigo: " + String.valueOf(code),
                                 Toast.LENGTH_LONG).show();
                     }
-                    try {
 
+                    if (!arrayList.isEmpty() && !latestArrayList.isEmpty() && finalI1 ==(arrayList.size()-1)) {
+                        Toast.makeText(ListaJogadoresActivity.this, latestArrayList.get(0).getPpg(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ListaJogadoresActivity.this, arrayList.get(0).getLastName(), Toast.LENGTH_SHORT).show();
+                        RecyclerViewJogadoresAdapter adapter = new RecyclerViewJogadoresAdapter(ListaJogadoresActivity.this,
+                                arrayList, latestArrayList);
+                        recyclerView.setAdapter(adapter);
+                        recyclerView.setLayoutManager(new LinearLayoutManager(ListaJogadoresActivity.this));
 
-                        if (!arrayList.isEmpty() && !latestArrayList.isEmpty() && (finalI == arrayList.size() - 1)) {
-                            Toast.makeText(ListaJogadoresActivity.this, latestArrayList.get(0).getPpg(), Toast.LENGTH_SHORT).show();
-                            Toast.makeText(ListaJogadoresActivity.this, arrayList.get(0).getLastName(), Toast.LENGTH_SHORT).show();
-                            RecyclerViewJogadoresAdapter adapter = new RecyclerViewJogadoresAdapter(ListaJogadoresActivity.this,
-                                    arrayList, latestArrayList);
-                            recyclerView.setAdapter(adapter);
-                            recyclerView.setLayoutManager(new LinearLayoutManager(ListaJogadoresActivity.this));
+                    }else
+                        Toast.makeText(ListaJogadoresActivity.this, "lista vazia " + String.valueOf(finalI1) +
+                                "valor " + latestArrayList.get(finalI1).getPpg(), Toast.LENGTH_SHORT).show();
 
-                        }
-                    }catch (Exception e){
-                         Log.d(String.valueOf(e), "erro");
-                    }
 
                 }
 
