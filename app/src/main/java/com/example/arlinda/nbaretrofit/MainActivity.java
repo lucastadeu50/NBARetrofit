@@ -164,6 +164,7 @@ public class MainActivity extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                Intent intent = new Intent(MainActivity.this, ListaJogadoresActivity.class);
                 intent.putExtra("teamid", teamList.get(position).getTeamId());
                 startActivity(intent);
@@ -171,16 +172,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //   CardView cardViewHawk = findViewById(R.id.cardViewHawk);
 
-
-        //   cardViewHawk.setOnClickListener(new View.OnClickListener() {
-        //      @Override
-        //    public void onClick(View v) {
-        //           Intent intent = new Intent(MainActivity.this, ListaJogadoresActivity.class);
-        //        startActivity(intent);
-        //   }
-        // });
 
     }
 

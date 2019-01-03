@@ -53,6 +53,8 @@ public class ListaJogadoresActivity extends AppCompatActivity {
        recyclerView = findViewById(R.id.recyclerViewJogadores);
 
 
+
+
         teamId = getIntent().getExtras().getString("teamid");
 
         standardListFiltatrada = new ArrayList<>();
@@ -108,8 +110,12 @@ public class ListaJogadoresActivity extends AppCompatActivity {
                 .build();
         StatsAPI statsAPI = retrofit.create(StatsAPI.class);
         final ArrayList<Latest> latestArrayList = new ArrayList<>(arrayList.size());
+         ArrayList<Latest> latestArrayList2 = new ArrayList<>(arrayList.size());
 
-
+        Latest latest = new Latest();
+        for (int i=0; i<arrayList.size(); i++){
+            latestArrayList.add(latest);
+        }
         final ProgressDialog dialog = new ProgressDialog(ListaJogadoresActivity.this);
 
 
@@ -139,9 +145,7 @@ public class ListaJogadoresActivity extends AppCompatActivity {
 
 
 
-                   //     String x = response1.getLeague().getStandard().getStats().getLatest().getAssists();response.isSuccessful()
-                        latestArrayList.add(response1.getLeague().getStandard().getStats().getLatest());
-                     //   Toast.makeText(ListaJogadoresActivity.this, latestArrayList.get(0).getAssists(), Toast.LENGTH_SHORT).show();
+                        latestArrayList.add(finalI,response1.getLeague().getStandard().getStats().getLatest());
 
                     } else {
                         Toast.makeText(getBaseContext(), "Falha ao acessar Web Service, anote o codigo: " + String.valueOf(code),
@@ -149,16 +153,13 @@ public class ListaJogadoresActivity extends AppCompatActivity {
                     }
 
                     if (!arrayList.isEmpty() && !latestArrayList.isEmpty() && finalI1 ==(arrayList.size()-1)) {
-                        Toast.makeText(ListaJogadoresActivity.this, latestArrayList.get(0).getPpg(), Toast.LENGTH_SHORT).show();
-                        Toast.makeText(ListaJogadoresActivity.this, arrayList.get(0).getLastName(), Toast.LENGTH_SHORT).show();
+
                         RecyclerViewJogadoresAdapter adapter = new RecyclerViewJogadoresAdapter(ListaJogadoresActivity.this,
                                 arrayList, latestArrayList);
                         recyclerView.setAdapter(adapter);
                         recyclerView.setLayoutManager(new LinearLayoutManager(ListaJogadoresActivity.this));
 
-                    }else
-                        Toast.makeText(ListaJogadoresActivity.this, "lista vazia " + String.valueOf(finalI1) +
-                                "valor " + latestArrayList.get(finalI1).getPpg(), Toast.LENGTH_SHORT).show();
+                    }
 
 
                 }

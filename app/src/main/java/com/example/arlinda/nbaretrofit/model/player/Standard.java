@@ -1,5 +1,6 @@
 package com.example.arlinda.nbaretrofit.model.player;
 
+import com.example.arlinda.nbaretrofit.model.stats.Stats;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

@@ -7,22 +7,22 @@
     format="10"
     ir-eligibility="COMPATIBLE"
     plugin-version="3.2.1"
-    timestamp="1546443588664"
+    timestamp="1546512988230"
     token="2759553637634933654"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="26293" />
+        duration="5965" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="304" />
+        duration="44" />
     <task
         name="verifier"
-        duration="63" />
+        duration="11" />
 
     <artifact
         location="C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -33,10 +33,10 @@
 
     <build
         build-mode="FULL"
-        timestamp="1546440701987"
+        timestamp="1546512199531"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
@@ -54,7 +54,7 @@
             location="C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
@@ -75,7 +75,16 @@
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1546443202089"
+        timestamp="1546512464388"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1546512686952"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
@@ -84,7 +93,7 @@
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1546443588664"
+        timestamp="1546512988230"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\arlinda\Desktop\Projetos\NBARetrofit\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
