@@ -1,10 +1,12 @@
 package com.example.arlinda.nbaretrofit.adapter;
 
 import android.content.Context;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,11 +18,19 @@ import com.example.arlinda.nbaretrofit.model.player.Standard;
 import com.example.arlinda.nbaretrofit.model.stats.Latest;
 import com.google.android.material.card.MaterialCardView;
 
+import java.net.CacheRequest;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
+
+import static java.lang.StrictMath.abs;
 
 public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerViewJogadoresAdapter.ViewHolder>{
     private static final String TAG = "RecyclerViewJogadoresAd";
@@ -40,13 +50,39 @@ public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerV
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_listitem, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
-        DropDownAnim dropDownAnim = new DropDownAnim(view, 200, false);
-        dropDownAnim.initialize(view.getWidth(), view.getHeight(), view.getWidth(), view.getHeight()+200);
+
         return viewHolder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
+
+        DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String today = sdf.format(Calendar.getInstance().getTime());
+        String dob = standardArrayList.get(position).getDateOfBirthUTC();
+
+        Date datetoday = null;
+        try {
+            datetoday = sdf.parse(dob);
+            Calendar caltoday = Calendar. getInstance();
+            caltoday.setTime(datetoday);
+            caltoday.get(Calendar.YEAR);
+            Date datedob = sdf.parse(today);
+            Calendar caldob = Calendar. getInstance();
+            caldob.setTime(datedob);
+            int age = abs(caltoday.get(Calendar.YEAR) - caldob.get(Calendar.YEAR));
+            if (caltoday.get(Calendar.DAY_OF_YEAR) > caldob.get(Calendar.DAY_OF_YEAR)){
+                age--;
+                }
+            holder.textViewDateOfBirth.setText("Age: " + age);
+
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
 
         String playerId = standardArrayList.get(position).getPersonId();
         String teamId = standardArrayList.get(position).getTeamId();
@@ -59,7 +95,6 @@ public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerV
 
         holder.textViewFirstName.setText(standardArrayList.get(position).getFirstName());
         holder.textViewLastName.setText(standardArrayList.get(position).getLastName());
-        holder.textViewDateOfBirth.setText(standardArrayList.get(position).getDateOfBirthUTC());
         holder.textViewHeight.setText("Height: "+ standardArrayList.get(position).getHeightFeet());
         holder.textViewJersey.setText(standardArrayList.get(position).getJersey());
         holder.textViewPos.setText("Pos: " + standardArrayList.get(position).getPos());
@@ -69,15 +104,25 @@ public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerV
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, String.valueOf(view.getWidth()), Toast.LENGTH_SHORT).show();
-                DropDownAnim dropDownAnim = new DropDownAnim(view, 200, false);
-              //
-                // dropDownAnim.setDuration(500);
-                dropDownAnim.initialize(view.getWidth(), view.getHeight(), view.getWidth(), view.getHeight()+200);
-
+                WindowManager windowmanager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
+                DisplayMetrics dimension = new DisplayMetrics();
+                windowmanager.getDefaultDisplay().getMetrics(dimension);
+                final int height = dimension.heightPixels;
+                boolean down;
+                int targetHeightUp = 300;
+                int targetHeightDown = 160;
+                if (view.getHeight() == targetHeightUp){
+                    down = false;
+                }
+                else{
+                    down = true;
+                }
+                Toast.makeText(context, String.valueOf(view.getHeight()), Toast.LENGTH_LONG).show();
+                DropDownAnim dropDownAnim = new DropDownAnim(view, targetHeightUp, targetHeightDown,down);
+                dropDownAnim.setDuration(1000);
+                dropDownAnim.initialize(view.getWidth(), view.getHeight(), view.getWidth(), height);
                 view.startAnimation(dropDownAnim);
-              //  dropDownAnim.setDuration(500);
-              //  dropDownAnim.start();
+
             }
         });
     }
