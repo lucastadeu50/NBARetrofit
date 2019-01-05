@@ -116,10 +116,6 @@
         "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0-alpha01.aar\\83ecaa5edb07f3b5b6df99177e0ef525\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_jogadores_adapter.xml.flat",
-        "source": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\src\\main\\res\\layout\\activity_jogadores_adapter.xml"
-    },
-    {
         "merged": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mia_logo.xml.flat",
         "source": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\src\\main\\res\\drawable\\ic_mia_logo.xml"
     },
@@ -496,10 +492,6 @@
         "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\b8b1ccf5f0c61cd07946fd5b760690dc\\res\\drawable-xhdpi-v4\\design_ic_visibility.png"
     },
     {
-        "merged": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_lista_jogadores.xml.flat",
-        "source": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\src\\main\\res\\layout\\activity_lista_jogadores.xml"
-    },
-    {
         "merged": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_text_material.xml.flat",
         "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0-alpha01.aar\\83ecaa5edb07f3b5b6df99177e0ef525\\res\\color-v23\\abc_btn_colored_text_material.xml"
     },
@@ -810,10 +802,6 @@
     {
         "merged": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_design_ic_visibility_off.xml.flat",
         "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\b8b1ccf5f0c61cd07946fd5b760690dc\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
-    },
-    {
-        "merged": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main2.xml.flat",
-        "source": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\src\\main\\res\\layout\\activity_main2.xml"
     },
     {
         "merged": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
@@ -1798,6 +1786,10 @@
     {
         "merged": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\arlinda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0-alpha01.aar\\83ecaa5edb07f3b5b6df99177e0ef525\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\font_roboto.xml.flat",
+        "source": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\src\\main\\res\\font\\roboto.xml"
     },
     {
         "merged": "C:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_expanded_menu_layout.xml.flat",

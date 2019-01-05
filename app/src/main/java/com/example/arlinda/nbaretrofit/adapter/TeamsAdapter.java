@@ -93,7 +93,7 @@ public class TeamsAdapter extends ArrayAdapter<Team> {
 
         //create the imageloader object
         ImageLoader imageLoader = ImageLoader.getInstance();
-        ;
+
         int defaultImage = mContext.getResources().getIdentifier("@drawable/ic_close_black_24dp",null,mContext.getPackageName());
 
         //create display options

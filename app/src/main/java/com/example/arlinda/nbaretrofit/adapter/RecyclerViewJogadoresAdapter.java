@@ -17,6 +17,7 @@ import com.example.arlinda.nbaretrofit.R;
 import com.example.arlinda.nbaretrofit.model.player.Standard;
 import com.example.arlinda.nbaretrofit.model.stats.Latest;
 import com.google.android.material.card.MaterialCardView;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.net.CacheRequest;
 import java.text.DateFormat;
@@ -39,7 +40,7 @@ public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerV
     private ArrayList<Standard> standardArrayList = new ArrayList<>();
     private ArrayList<Latest> latestArrayList = new ArrayList<>();
 
-    public RecyclerViewJogadoresAdapter(Context context, ArrayList<Standard> standardArrayList, ArrayList<Latest> latestArrayList) {
+    public RecyclerViewJogadoresAdapter(Context context, ArrayList<Latest> latestArrayList, ArrayList<Standard> standardArrayList) {
         this.context = context;
         this.standardArrayList = standardArrayList;
         this.latestArrayList = latestArrayList;
@@ -56,7 +57,6 @@ public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerV
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
 
         DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String today = sdf.format(Calendar.getInstance().getTime());
@@ -76,30 +76,70 @@ public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerV
                 age--;
                 }
             holder.textViewDateOfBirth.setText("Age: " + age);
-
-
-        } catch (ParseException e) {
+            } catch (ParseException e) {
             e.printStackTrace();
         }
+
+        Double defRebPG;
+        Double offRebPG;
+        if (latestArrayList.get(position).getGamesPlayed() !=null || latestArrayList.get(position).getOffReb() !=null ||
+                latestArrayList.get(position).getDefReb()!=null)
+                {
+             defRebPG = Double.valueOf(latestArrayList.get(position).getDefReb())/Double.valueOf(latestArrayList.get(position).getGamesPlayed());
+                    defRebPG = (double) Math.round(defRebPG * 10) / 10;
+
+                }
+            else{
+                     defRebPG = null;
+                }
+
+        if (latestArrayList.get(position).getGamesPlayed() !=null || latestArrayList.get(position).getOffReb() !=null ||
+                latestArrayList.get(position).getDefReb()!=null)
+        {
+            offRebPG = Double.valueOf(latestArrayList.get(position).getOffReb())/Double.valueOf(latestArrayList.get(position).getGamesPlayed());
+            offRebPG = (double) Math.round(offRebPG * 10) / 10;
+
+        }
+        else{
+            offRebPG = null;
+        }
+
 
 
 
         String playerId = standardArrayList.get(position).getPersonId();
         String teamId = standardArrayList.get(position).getTeamId();
         String url = "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/"+ teamId +"/2018/260x190/"+ playerId +".png";
-        Log.d(TAG, "onBindViewHolder: called.");
+    /*   Log.d(TAG, "onBindViewHolder: called.");
         Glide.with(context)
              .asBitmap()
              .load(url)
               .into(holder.imageViewAvatar);
+*/
+
+        ImageLoader imageLoader =  ImageLoader.getInstance();
+        imageLoader.displayImage(url, holder.imageViewAvatar);
 
         holder.textViewFirstName.setText(standardArrayList.get(position).getFirstName());
         holder.textViewLastName.setText(standardArrayList.get(position).getLastName());
         holder.textViewHeight.setText("Height: "+ standardArrayList.get(position).getHeightFeet());
         holder.textViewJersey.setText(standardArrayList.get(position).getJersey());
         holder.textViewPos.setText("Pos: " + standardArrayList.get(position).getPos());
-
-        //  holder.te.setText(latestArrayList.get(position).getPpg());
+        holder.textViewPoints.setText(latestArrayList.get(position).getPpg());
+        holder.textViewGames.setText(latestArrayList.get(position).getGamesPlayed());
+        holder.textViewMinutes.setText(latestArrayList.get(position).getMpg());
+        holder.textViewAssists.setText(latestArrayList.get(position).getApg());
+        holder.textViewSteals.setText(latestArrayList.get(position).getSpg());
+        holder.textViewBlocks.setText(latestArrayList.get(position).getBpg());
+        holder.textViewFGpercentage.setText(latestArrayList.get(position).getFgp());
+        holder.textViewFTA.setText(latestArrayList.get(position).getFta());
+        holder.textViewFTM.setText(latestArrayList.get(position).getFtm());
+        holder.textViewFTpercentage.setText(latestArrayList.get(position).getFtp());
+        holder.textView3PM.setText(latestArrayList.get(position).getTpm());
+        holder.textView3Ppercentage.setText(latestArrayList.get(position).getTpp());
+        holder.textViewRebounding.setText(latestArrayList.get(position).getRpg());
+        holder.textViewDefReb.setText(String.valueOf(defRebPG));
+        holder.textViewOffReb.setText(String.valueOf(offRebPG));
 
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,7 +149,7 @@ public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerV
                 windowmanager.getDefaultDisplay().getMetrics(dimension);
                 final int height = dimension.heightPixels;
                 boolean down;
-                int targetHeightUp = 300;
+                int targetHeightUp = 487;
                 int targetHeightDown = 160;
                 if (view.getHeight() == targetHeightUp){
                     down = false;
@@ -117,11 +157,11 @@ public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerV
                 else{
                     down = true;
                 }
-                Toast.makeText(context, String.valueOf(view.getHeight()), Toast.LENGTH_LONG).show();
                 DropDownAnim dropDownAnim = new DropDownAnim(view, targetHeightUp, targetHeightDown,down);
                 dropDownAnim.setDuration(1000);
                 dropDownAnim.initialize(view.getWidth(), view.getHeight(), view.getWidth(), height);
                 view.startAnimation(dropDownAnim);
+
 
             }
         });
@@ -140,8 +180,27 @@ public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerV
         TextView textViewDateOfBirth;
         TextView textViewHeight;
         TextView textViewJersey;
+        TextView textViewPoints;
+        TextView textViewGames;
+        TextView textViewMinutes;
+        TextView textViewAssists;
+        TextView textViewSteals;
+        TextView textViewBlocks;
+        TextView textViewFGpercentage;
+        TextView textViewFTA;
+        TextView textViewFTM;
+        TextView textViewFTpercentage;
+        TextView textView3PM;
+        TextView textView3Ppercentage;
+        TextView textViewRebounding;
+        TextView textViewOffReb;
+        TextView textViewDefReb;
+
+
+
         ImageView imageViewAvatar;
         MaterialCardView parentLayout;
+
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -153,6 +212,21 @@ public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerV
             textViewDateOfBirth = itemView.findViewById(R.id.textViewDateOfBirth);
             textViewHeight = itemView.findViewById(R.id.textViewHeight);
             textViewJersey = itemView.findViewById(R.id.textViewJersey);
+            textViewPoints = itemView.findViewById(R.id.textViewPoints);
+            textViewGames = itemView.findViewById(R.id.textViewGames);
+            textViewMinutes = itemView.findViewById(R.id.textViewMinutes);
+            textViewAssists = itemView.findViewById(R.id.textViewAssists);
+            textViewSteals = itemView.findViewById(R.id.textViewSteals);
+            textViewBlocks = itemView.findViewById(R.id.textViewBlocks);
+            textViewFGpercentage = itemView.findViewById(R.id.textViewFG);
+            textViewFTA = itemView.findViewById(R.id.textViewFTA);
+            textViewFTM = itemView.findViewById(R.id.textViewFTM);
+            textViewFTpercentage = itemView.findViewById(R.id.textViewFTpercentage);
+            textViewRebounding = itemView.findViewById(R.id.textViewRebouding);
+            textViewOffReb = itemView.findViewById(R.id.textViewOffReb);
+            textViewDefReb = itemView.findViewById(R.id.textViewDefReb);
+            textView3PM = itemView.findViewById(R.id.textView3PM);
+            textView3Ppercentage = itemView.findViewById(R.id.textView3percentage);
             imageViewAvatar = itemView.findViewById(R.id.imageViewAvatar);
 
             parentLayout = itemView.findViewById(R.id.parent_layout);

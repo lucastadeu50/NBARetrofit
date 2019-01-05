@@ -5,29 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.arlinda.nbaretrofit.adapter.JogadoresAdapter;
 import com.example.arlinda.nbaretrofit.adapter.RecyclerViewJogadoresAdapter;
 import com.example.arlinda.nbaretrofit.interfaces.NbaAPI;
 import com.example.arlinda.nbaretrofit.interfaces.StatsAPI;
 import com.example.arlinda.nbaretrofit.model.player.Feed;
 import com.example.arlinda.nbaretrofit.model.player.Standard;
 import com.example.arlinda.nbaretrofit.model.stats.Latest;
-import com.example.arlinda.nbaretrofit.model.stats.Stats;
 
 import java.util.ArrayList;
-import java.util.List;
 
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import io.reactivex.Observable;
-import io.reactivex.functions.Consumer;
-import io.reactivex.functions.Function;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -51,6 +43,9 @@ public class ListaJogadoresActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recycler_jogadores);
 
         recyclerView = findViewById(R.id.recyclerViewJogadores);
+
+        recyclerView.addItemDecoration(new DividerItemDecoration(this,
+                DividerItemDecoration.VERTICAL));
 
 
         teamId = getIntent().getExtras().getString("teamid");
@@ -108,10 +103,10 @@ public class ListaJogadoresActivity extends AppCompatActivity {
         StatsAPI statsAPI = retrofit.create(StatsAPI.class);
         final ArrayList<Latest> latestArrayList = new ArrayList<>(arrayList.size());
 
-        Latest latest = new Latest();
-        for (int i = 0; i < arrayList.size(); i++) {
-            latestArrayList.add(latest);
-        }
+       final Latest latest = new Latest();
+       for (int i = 0; i < arrayList.size(); i++) {
+           latestArrayList.add(latest);
+       }
         final ProgressDialog dialog = new ProgressDialog(ListaJogadoresActivity.this);
 
 
@@ -137,10 +132,12 @@ public class ListaJogadoresActivity extends AppCompatActivity {
                     if (response.isSuccessful()) {
 
                         com.example.arlinda.nbaretrofit.model.stats.Response response1 = response.body();
+                      //  Toast.makeText(ListaJogadoresActivity.this, String.valueOf(finalI), Toast.LENGTH_SHORT).show();
+                        if(latestArrayList.get(finalI).getPpg() == null){
+                            latestArrayList.remove(finalI);
 
-
-                        latestArrayList.add(finalI, response1.getLeague().getStandard().getStats().getLatest());
-
+                        }
+                            latestArrayList.add(finalI, response1.getLeague().getStandard().getStats().getLatest());
                     } else {
                         Toast.makeText(getBaseContext(), "Falha ao acessar Web Service, anote o codigo: " + String.valueOf(code),
                                 Toast.LENGTH_LONG).show();
@@ -149,12 +146,14 @@ public class ListaJogadoresActivity extends AppCompatActivity {
                     if (!arrayList.isEmpty() && !latestArrayList.isEmpty() && finalI1 == (arrayList.size() - 1)) {
 
                         RecyclerViewJogadoresAdapter adapter = new RecyclerViewJogadoresAdapter(ListaJogadoresActivity.this,
-                                arrayList, latestArrayList);
+                                latestArrayList, arrayList);
                         recyclerView.setAdapter(adapter);
                         recyclerView.setLayoutManager(new LinearLayoutManager(ListaJogadoresActivity.this));
 
                     }
-
+                    Toast.makeText(ListaJogadoresActivity.this,String.valueOf(latestArrayList.size()), Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(ListaJogadoresActivity.this,latestArrayList.get(finalI).getGamesPlayed() +" posição "+ String.valueOf(finalI) + " nome " +
+                     //       arrayList.get(finalI).getLastName(), Toast.LENGTH_LONG).show();
 
                 }
 

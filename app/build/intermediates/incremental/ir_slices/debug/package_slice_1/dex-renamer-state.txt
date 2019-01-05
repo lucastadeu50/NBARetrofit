@@ -1,4 +1,4 @@
-#Thu Jan 03 18:22:50 BRST 2019
+#Fri Jan 04 16:52:45 BRST 2019
 base.0=C\:\\Users\\arlinda\\Desktop\\Projetos\\NBARetrofit\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 path.0=classes.dex
 renamed.0=classes.dex

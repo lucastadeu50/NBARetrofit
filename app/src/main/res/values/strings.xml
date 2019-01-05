@@ -3,17 +3,17 @@
     <string name="points">Points</string>
     <string name="assists">Assists</string>
     <string name="offReb">Off Reb</string>
-    <string name="defreb">Def Rep</string>
+    <string name="defreb">Def Reb</string>
     <string name="rebounding">Rebounding</string>
     <string name="blocks">Blocks</string>
     <string name="steals">Steals</string>
-    <string name="fg">FG(%)</string>
+    <string name="fg">FG (%)</string>
     <string name="pm3">3 P. Made</string>
-    <string name="p3percentage">3 P.(%)</string>
+    <string name="p3percentage">3 P. (%)</string>
     <string name="fantasy">Fantasy</string>
     <string name="minutes">Minutes</string>
     <string name="games">Games</string>
-    <string name="ftmpercent">FTM(%)</string>
+    <string name="ftmpercent">FTM (%)</string>
     <string name="ftm">FTM</string>
     <string name="fta">FTA</string>
 </resources>

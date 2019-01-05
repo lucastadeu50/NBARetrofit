@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ListView mListView = (ListView) findViewById(R.id.listViewTeams);
+        ListView mListView =  findViewById(R.id.listViewTeams);
 
         Team atlanta_hawks = new Team("1610612737", "Atlanta Hawks",
                 "drawable://" + R.drawable.atl_logo);
