@@ -17,6 +17,7 @@ import com.example.arlinda.nbaretrofit.R;
 import com.example.arlinda.nbaretrofit.model.player.Standard;
 import com.example.arlinda.nbaretrofit.model.stats.Latest;
 import com.google.android.material.card.MaterialCardView;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.net.CacheRequest;
@@ -110,15 +111,26 @@ public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerV
         String playerId = standardArrayList.get(position).getPersonId();
         String teamId = standardArrayList.get(position).getTeamId();
         String url = "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/"+ teamId +"/2018/260x190/"+ playerId +".png";
-    /*   Log.d(TAG, "onBindViewHolder: called.");
+     Log.d(TAG, "onBindViewHolder: called.");
         Glide.with(context)
              .asBitmap()
              .load(url)
               .into(holder.imageViewAvatar);
-*/
 
+
+
+
+        // Image Loader
+       /* int defaultImage = context.getResources().getIdentifier("@drawable/ic_close_black_24dp",null,context.getPackageName());
         ImageLoader imageLoader =  ImageLoader.getInstance();
-        imageLoader.displayImage(url, holder.imageViewAvatar);
+        DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
+                .resetViewBeforeLoading(true)
+                .showImageForEmptyUri(defaultImage)
+                .showImageOnFail(defaultImage)
+                .showImageOnLoading(defaultImage).build();
+        imageLoader.displayImage(url, holder.imageViewAvatar, options);
+        */
+
 
         holder.textViewFirstName.setText(standardArrayList.get(position).getFirstName());
         holder.textViewLastName.setText(standardArrayList.get(position).getLastName());

@@ -132,7 +132,6 @@ public class ListaJogadoresActivity extends AppCompatActivity {
                     if (response.isSuccessful()) {
 
                         com.example.arlinda.nbaretrofit.model.stats.Response response1 = response.body();
-                      //  Toast.makeText(ListaJogadoresActivity.this, String.valueOf(finalI), Toast.LENGTH_SHORT).show();
                         if(latestArrayList.get(finalI).getPpg() == null){
                             latestArrayList.remove(finalI);
 
@@ -151,9 +150,6 @@ public class ListaJogadoresActivity extends AppCompatActivity {
                         recyclerView.setLayoutManager(new LinearLayoutManager(ListaJogadoresActivity.this));
 
                     }
-                    Toast.makeText(ListaJogadoresActivity.this,String.valueOf(latestArrayList.size()), Toast.LENGTH_SHORT).show();
-                   // Toast.makeText(ListaJogadoresActivity.this,latestArrayList.get(finalI).getGamesPlayed() +" posição "+ String.valueOf(finalI) + " nome " +
-                     //       arrayList.get(finalI).getLastName(), Toast.LENGTH_LONG).show();
 
                 }
 

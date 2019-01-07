@@ -3,6 +3,8 @@ package com.example.arlinda.nbaretrofit;
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -10,6 +12,7 @@ import android.widget.ListView;
 import com.example.arlinda.nbaretrofit.adapter.TeamsAdapter;
 import com.example.arlinda.nbaretrofit.model.player.Standard;
 import com.example.arlinda.nbaretrofit.model.team.Team;
+import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 
@@ -18,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String BASE_URL = "http://data.nba.net/";
     Standard standard;
+    TeamsAdapter adapter;
+    private TextInputEditText textInputEditText;
 
 
     @Override
@@ -26,8 +31,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ListView mListView =  findViewById(R.id.listViewTeams);
+        textInputEditText = findViewById(R.id.textInputEditText);
 
-        Team atlanta_hawks = new Team("1610612737", "Atlanta Hawks",
+        Team atlanta_hawks = new Team("1610612737", "Hawks",
                 "drawable://" + R.drawable.atl_logo);
 
         Team charlotte_hornets = new Team("1610612766", "Charlotte Hornets",
@@ -158,8 +164,32 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        TeamsAdapter adapter = new TeamsAdapter(this, R.layout.activity_teams_adapter, teamList);
+         adapter = new TeamsAdapter(this, R.layout.activity_teams_adapter, teamList);
         mListView.setAdapter(adapter);
+
+
+        textInputEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+                (MainActivity.this).adapter.getFilter().filter(s.toString());
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+               String teamnname = (textInputEditText.getText().toString().trim());
+                (MainActivity.this).adapter.getFilter().filter(s.toString());
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                (MainActivity.this).adapter.getFilter().filter(s);
+
+            }
+        });
+
+
 
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

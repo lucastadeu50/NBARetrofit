@@ -2,7 +2,9 @@
 <resources>
     <color name="colorPrimary">#0e284f</color>
     <color name="colorPrimaryDark">#03122f</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#e4e3e3</color>
     <color name="cordafontelastname">#212121</color>
     <color name="cordafontefirstname">#424242</color>
+    <color name="corhintactionbar">#e4e3e3</color>
+    <color name="cortextactionbbar">#fcfcfc</color>
 </resources>

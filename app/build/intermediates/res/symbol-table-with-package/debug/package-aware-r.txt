@@ -750,6 +750,8 @@ color colorPrimary
 color colorPrimaryDark
 color cordafontefirstname
 color cordafontelastname
+color corhintactionbar
+color cortextactionbbar
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
 color design_default_color_primary_dark
@@ -1042,6 +1044,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen tall_toolbar_height
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1286,6 +1289,7 @@ id alertTitle
 id all
 id always
 id anticipate
+id appbar
 id asConfigured
 id async
 id auto
@@ -1312,6 +1316,7 @@ id container
 id content
 id contentPanel
 id coordinator
+id coordinatorLayoutTeams
 id cos
 id custom
 id customPanel
@@ -1412,6 +1417,7 @@ id radio
 id ratio
 id rectangles
 id recyclerViewJogadores
+id recyclerViewTeams
 id reverseSawtooth
 id right
 id right_icon
@@ -1475,6 +1481,8 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
 id text2
+id textFieldSearch
+id textInputEditText
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1599,7 +1607,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_collapsing_toolbar
+layout activity_list_teams
 layout activity_main
+layout activity_main3
 layout activity_recycler_jogadores
 layout activity_teams_adapter
 layout custom_dialog

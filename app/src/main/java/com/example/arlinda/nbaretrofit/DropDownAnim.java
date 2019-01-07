@@ -19,23 +19,12 @@ public class DropDownAnim extends Animation {
 
     @Override
     protected void applyTransformation(float interpolatedTime, Transformation t) {
-      /*  int newHeight;
-        int endingHeight = targetHeight;
-        startingHeight = view.getHeight();
 
-        if (down) {
-            newHeight = (int) (((endingHeight-startingHeight) * interpolatedTime) + startingHeight);
-        } else {
-            newHeight = (int) (((endingHeight-startingHeight)* (1 - interpolatedTime))+startingHeight);
-        }
-        view.getLayoutParams().height = newHeight;
-        view.requestLayout();*/
         int startingheight = view.getHeight();
         int newHeight;
         if (down) {
             newHeight = (int) ( startingheight + ((targetHeightUp - startingheight) * interpolatedTime));
         } else {
-           // newHeight = (int) (targetHeight * (1 - interpolatedTime));
             newHeight = (int) (targetHeightDownn + (startingheight - targetHeightDownn ) * (1 - interpolatedTime));
 
         }
