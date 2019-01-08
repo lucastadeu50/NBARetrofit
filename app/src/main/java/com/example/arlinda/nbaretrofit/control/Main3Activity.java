@@ -46,7 +46,6 @@ public class Main3Activity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(Main3Activity.this));
 
 
-
         /**
          * Adiciona um listener para capturar qualer caractere digitado na barra de pesquisa
          */
