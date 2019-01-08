@@ -1,22 +1,23 @@
-package com.example.arlinda.nbaretrofit;
+package com.example.arlinda.nbaretrofit.control;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.arlinda.nbaretrofit.R;
 import com.example.arlinda.nbaretrofit.adapter.RecyclerViewJogadoresAdapter;
 import com.example.arlinda.nbaretrofit.interfaces.NbaAPI;
 import com.example.arlinda.nbaretrofit.interfaces.StatsAPI;
 import com.example.arlinda.nbaretrofit.model.player.Feed;
 import com.example.arlinda.nbaretrofit.model.player.Standard;
 import com.example.arlinda.nbaretrofit.model.stats.Latest;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,11 +28,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ListaJogadoresActivity extends AppCompatActivity {
-    ListView listViewJogadores;
-
+    ConstraintLayout constraintLayout;
     RecyclerView recyclerView;
-    public Standard standard;
-    private static final String TAG = "MainActivity";
     private static final String BASE_URL = "http://data.nba.net/";
     String teamId = null;
     private ArrayList<Standard> standardListFiltatrada;
@@ -47,11 +45,14 @@ public class ListaJogadoresActivity extends AppCompatActivity {
         recyclerView.addItemDecoration(new DividerItemDecoration(this,
                 DividerItemDecoration.VERTICAL));
 
+        recyclerView.setNestedScrollingEnabled(false);
 
         teamId = getIntent().getExtras().getString("teamid");
 
         standardListFiltatrada = new ArrayList<>();
         callPlayers();
+
+        constraintLayout = findViewById(R.id.parent_layoutJogadores);
 
     }
 
@@ -70,8 +71,6 @@ public class ListaJogadoresActivity extends AppCompatActivity {
         call.enqueue(new Callback<Feed>() {
             @Override
             public void onResponse(Call<Feed> call, Response<Feed> response) {
-                Log.d(TAG, "onResponse: Server Response: " + response.toString());
-                Log.d(TAG, "onResponse: received information: " + response.body().toString());
 
                 ArrayList<Standard> standardList = response.body().getLeague().getStandard();
 
@@ -87,7 +86,6 @@ public class ListaJogadoresActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<Feed> call, Throwable t) {
-                Log.e(TAG, "onFailure: Something went wrong: " + t.getMessage());
                 Toast.makeText(ListaJogadoresActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
 
             }
@@ -103,10 +101,10 @@ public class ListaJogadoresActivity extends AppCompatActivity {
         StatsAPI statsAPI = retrofit.create(StatsAPI.class);
         final ArrayList<Latest> latestArrayList = new ArrayList<>(arrayList.size());
 
-       final Latest latest = new Latest();
-       for (int i = 0; i < arrayList.size(); i++) {
-           latestArrayList.add(latest);
-       }
+        final Latest latest = new Latest();
+        for (int i = 0; i < arrayList.size(); i++) {
+            latestArrayList.add(latest);
+        }
         final ProgressDialog dialog = new ProgressDialog(ListaJogadoresActivity.this);
 
 
@@ -132,11 +130,11 @@ public class ListaJogadoresActivity extends AppCompatActivity {
                     if (response.isSuccessful()) {
 
                         com.example.arlinda.nbaretrofit.model.stats.Response response1 = response.body();
-                        if(latestArrayList.get(finalI).getPpg() == null){
+                        if (latestArrayList.get(finalI).getPpg() == null) {
                             latestArrayList.remove(finalI);
 
                         }
-                            latestArrayList.add(finalI, response1.getLeague().getStandard().getStats().getLatest());
+                        latestArrayList.add(finalI, response1.getLeague().getStandard().getStats().getLatest());
                     } else {
                         Toast.makeText(getBaseContext(), "Falha ao acessar Web Service, anote o codigo: " + String.valueOf(code),
                                 Toast.LENGTH_LONG).show();
@@ -163,6 +161,7 @@ public class ListaJogadoresActivity extends AppCompatActivity {
 
         }
 
+        Snackbar.make(constraintLayout, R.string.snackbarPlayerActivity, Snackbar.LENGTH_LONG).show();
 
     }
 

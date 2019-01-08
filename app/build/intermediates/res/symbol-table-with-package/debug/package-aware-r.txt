@@ -775,6 +775,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background_nba_logo
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1178,6 +1179,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_orl_logo
+drawable ic_search_black_24dp
 drawable ic_sync_problem_black_24dp
 drawable ic_was_logo
 drawable ind_logo
@@ -1380,7 +1382,6 @@ id line1
 id line3
 id linear
 id listMode
-id listViewTeams
 id list_item
 id masked
 id message
@@ -1405,6 +1406,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_layout
+id parent_layoutJogadores
 id parent_matrix
 id path
 id pathRelative
@@ -1482,7 +1484,6 @@ id tag_unhandled_key_listeners
 id text
 id text2
 id textFieldSearch
-id textInputEditText
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1609,10 +1610,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_collapsing_toolbar
 layout activity_list_teams
-layout activity_main
 layout activity_main3
 layout activity_recycler_jogadores
-layout activity_teams_adapter
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1642,6 +1641,9 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_nba_logo
+mipmap ic_launcher_nba_logo_round
 mipmap ic_launcher_round
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -1700,6 +1702,7 @@ string pm3
 string points
 string rebounding
 string search_menu_title
+string snackbarPlayerActivity
 string status_bar_notification_info_overflow
 string steals
 style AlertDialog_AppCompat

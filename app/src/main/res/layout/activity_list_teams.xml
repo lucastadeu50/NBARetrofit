@@ -35,6 +35,7 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:textAlignment="center"
+                android:textSize="16dp"
                 android:textColor="@color/cordafontelastname" />
         </LinearLayout>
 

@@ -1,4 +1,4 @@
-package com.example.arlinda.nbaretrofit;
+package com.example.arlinda.nbaretrofit.animanddrawer;
 
 import android.graphics.Rect;
 import android.view.View;

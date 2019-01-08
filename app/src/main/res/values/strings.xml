@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NBARetrofit</string>
+    <string name="app_name">NBA Rosters Stats"</string>
     <string name="points">Points</string>
     <string name="assists">Assists</string>
     <string name="offReb">Off Reb</string>
@@ -16,4 +16,5 @@
     <string name="ftmpercent">FTM (%)</string>
     <string name="ftm">FTM</string>
     <string name="fta">FTA</string>
+    <string name="snackbarPlayerActivity">Touch on player to see stats</string>
 </resources>

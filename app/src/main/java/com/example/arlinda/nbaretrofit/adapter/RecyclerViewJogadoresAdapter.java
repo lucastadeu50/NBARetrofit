@@ -9,18 +9,14 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.arlinda.nbaretrofit.DropDownAnim;
+import com.example.arlinda.nbaretrofit.animanddrawer.DropDownAnim;
 import com.example.arlinda.nbaretrofit.R;
 import com.example.arlinda.nbaretrofit.model.player.Standard;
 import com.example.arlinda.nbaretrofit.model.stats.Latest;
 import com.google.android.material.card.MaterialCardView;
-import com.nostra13.universalimageloader.core.DisplayImageOptions;
-import com.nostra13.universalimageloader.core.ImageLoader;
 
-import java.net.CacheRequest;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -29,7 +25,6 @@ import java.util.Calendar;
 import java.util.Date;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import static java.lang.StrictMath.abs;

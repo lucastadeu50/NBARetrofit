@@ -6,35 +6,23 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
-import android.os.Bundle;
-import android.util.DisplayMetrics;
-import android.util.Log;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.example.arlinda.nbaretrofit.DropDownAnim;
 import com.example.arlinda.nbaretrofit.R;
-import com.example.arlinda.nbaretrofit.model.player.Standard;
-import com.example.arlinda.nbaretrofit.model.stats.Latest;
+import com.example.arlinda.nbaretrofit.control.ListaJogadoresActivity;
 import com.example.arlinda.nbaretrofit.model.team.Team;
-import com.google.android.material.card.MaterialCardView;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 
-import static java.lang.StrictMath.abs;
+
 
 public class RecyclerViewTeamsAdapter extends RecyclerView.Adapter<RecyclerViewTeamsAdapter.ViewHolder> {
 
@@ -56,7 +44,7 @@ public class RecyclerViewTeamsAdapter extends RecyclerView.Adapter<RecyclerViewT
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerViewTeamsAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull RecyclerViewTeamsAdapter.ViewHolder holder, final int position) {
 
         // Image Loader
        int defaultImage = context.getResources().getIdentifier("@drawable/ic_close_black_24dp",null,context.getPackageName());
@@ -77,6 +65,9 @@ public class RecyclerViewTeamsAdapter extends RecyclerView.Adapter<RecyclerViewT
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(context, ListaJogadoresActivity.class);
+                intent.putExtra("teamid", teamList.get(position).getTeamId());
+                context.startActivity(intent);
 
 
 
@@ -109,5 +100,9 @@ public class RecyclerViewTeamsAdapter extends RecyclerView.Adapter<RecyclerViewT
 
 
         }
+    }
+    public void filterList(ArrayList<Team> filteredList) {
+        teamList = filteredList;
+        notifyDataSetChanged();
     }
 }
