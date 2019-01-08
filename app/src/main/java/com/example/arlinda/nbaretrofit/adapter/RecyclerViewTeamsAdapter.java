@@ -22,6 +22,9 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 import java.util.ArrayList;
 
+/**
+ * Adapter utilizado para mostrar a lista de times
+ */
 
 
 public class RecyclerViewTeamsAdapter extends RecyclerView.Adapter<RecyclerViewTeamsAdapter.ViewHolder> {
@@ -46,8 +49,7 @@ public class RecyclerViewTeamsAdapter extends RecyclerView.Adapter<RecyclerViewT
     @Override
     public void onBindViewHolder(@NonNull RecyclerViewTeamsAdapter.ViewHolder holder, final int position) {
 
-        // Image Loader
-       int defaultImage = context.getResources().getIdentifier("@drawable/ic_close_black_24dp",null,context.getPackageName());
+        int defaultImage = context.getResources().getIdentifier("@drawable/ic_close_black_24dp",null,context.getPackageName());
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(context).build();
         ImageLoader.getInstance().init(config);
         ImageLoader imageLoader =  ImageLoader.getInstance();
@@ -68,8 +70,6 @@ public class RecyclerViewTeamsAdapter extends RecyclerView.Adapter<RecyclerViewT
                 Intent intent = new Intent(context, ListaJogadoresActivity.class);
                 intent.putExtra("teamid", teamList.get(position).getTeamId());
                 context.startActivity(intent);
-
-
 
             }
         });

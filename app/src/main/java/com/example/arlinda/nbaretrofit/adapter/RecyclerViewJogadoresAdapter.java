@@ -29,6 +29,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import static java.lang.StrictMath.abs;
 
+/**
+ * Adapter utilizado para preencher a lista de jogadores
+ */
+
+
 public class RecyclerViewJogadoresAdapter extends RecyclerView.Adapter<RecyclerViewJogadoresAdapter.ViewHolder>{
     private static final String TAG = "RecyclerViewJogadoresAd";
 

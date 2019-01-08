@@ -57,6 +57,11 @@ public class ListaJogadoresActivity extends AppCompatActivity {
     }
 
 
+
+    /**
+     * Metodo para chamada da lista de jogadores direto da api da nba, essa lista é filtrada de acordo com o teamid
+     *
+     */
     public void callPlayers() {
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -92,6 +97,12 @@ public class ListaJogadoresActivity extends AppCompatActivity {
         });
 
     }
+
+
+    /**
+     * Metodo utilizado para fazer chamada de um jogador por um utilizando o retrofit de maneira assincrona
+     * @param arrayList recebe a lista com o personid de cada jogador do time
+     */
 
     public void callStats(final ArrayList<Standard> arrayList) {
         Retrofit retrofit = new Retrofit.Builder()

@@ -5,6 +5,11 @@ import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
 
+/**
+ * Interface utilizada para conexão com serviço da nba
+ */
+
+
 public interface StatsAPI {
 
     String BASE_URL = "http://data.nba.net/";

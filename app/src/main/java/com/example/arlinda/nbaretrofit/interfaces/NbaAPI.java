@@ -6,6 +6,12 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
 
+
+
+/**
+ * Interface utilizada para conexão com serviço da nba
+ */
+
 public interface NbaAPI {
     String BASE_URL = "http://data.nba.net/";
 

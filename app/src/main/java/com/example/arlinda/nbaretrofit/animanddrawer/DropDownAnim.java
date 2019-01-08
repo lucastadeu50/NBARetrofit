@@ -4,6 +4,11 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
 
+/**
+ * Animação utitlizada para expandir e colapsar os cards com as inforções dos jogadores
+ */
+
+
 public class DropDownAnim extends Animation {
     private final int targetHeightUp;
     private final int targetHeightDownn;
